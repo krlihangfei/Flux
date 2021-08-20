@@ -1,0 +1,793 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>一. 白皮书 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ying-wen.html" />
+    
+    
+    <link rel="prev" href="../chapter1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1.html">
+            
+                <a href="../chapter1.html">
+            
+                    
+                    中文
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="4e00-he-yue-di-zhi.html">
+            
+                <a href="4e00-he-yue-di-zhi.html">
+            
+                    
+                    一. 白皮书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ying-wen.html">
+            
+                <a href="../ying-wen.html">
+            
+                    
+                    En
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../ying-wen/4e00-white-paper.html">
+            
+                <a href="../ying-wen/4e00-white-paper.html">
+            
+                    
+                    一. White Paper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >一. 白皮书</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="article-title">&#x3010;&#x4EA7;&#x54C1;-&#x767D;&#x76AE;&#x4E66;&#x3011;Flux&#x767D;&#x76AE;&#x4E66;v2.1 </h1>
+<p>Flux &#x534F;&#x8BAE;&#x767D;&#x76AE;&#x4E66;</p>
+<p><strong>&#x7248;&#x672C; 2.1</strong></p>
+<p>2021&#x5E74;03&#x6708;08&#x65E5;</p>
+<p><strong>&#x4F5C;&#x8005;</strong></p>
+<p><strong>&#x5F6D;&#x7FF0;</strong><a href="http://01.finance/" target="_blank"><strong>http://01.finance/</strong></a></p>
+<p><strong>&#x6458;&#x8981;</strong></p>
+<p>&#x672C;&#x6587;&#x4ECB;&#x7ECD;&#x4E00;&#x79CD;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x534F;&#x8BAE;Flux&#xFF0C;&#x8BE5;&#x534F;&#x8BAE;&#x521B;&#x5EFA;&#x57FA;&#x4E8E;&#x8D27;&#x5E01;&#x4F9B;&#x6C42;&#xFF0C;&#x901A;&#x8FC7;&#x7B97;&#x6CD5;&#x8BBE;&#x7F6E;&#x5229;&#x7387;&#x7684;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x3002;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x96F6;&#x963B;&#x529B;&#x3001;&#x9AD8;&#x901F;&#x5730;&#x4EA4;&#x6613;&#x8D44;&#x4EA7;&#x7684;&#x65F6;&#x95F4;&#x4EF7;&#x503C;&#xFF0C;&#x589E;&#x5F3A;&#x5E02;&#x573A;&#x6D41;&#x52A8;&#x6027;&#x3002;&#x5E76;&#x5C06;&#x8BE5;&#x534F;&#x8BAE;&#x5728;&#x9AD8;&#x6027;&#x80FD;&#x7684;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x533A;&#x5757;&#x94FE;&#x7F51;&#x7EDC; Conflux &#x4E2D;&#x5B9E;&#x65BD;&#x3002;</p>
+<ol>
+<li><strong>&#x4ECB;&#x7ECD; Introduction</strong></li>
+</ol>
+<p>DeFi &#x662F;&#x5F53;&#x4E0B;&#x533A;&#x5757;&#x94FE;&#x884C;&#x4E1A;&#x6700;&#x706B;&#x70ED;&#x7684;&#x6982;&#x5FF5;&#x4E4B;&#x4E00;&#xFF0C;&#x4E00;&#x822C;&#x901A;&#x4FD7;&#x7406;&#x89E3;&#x4E3A;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x91D1;&#x878D;&#xFF0C;&#x5373;&#x4F9D;&#x6258;&#x5206;&#x5E03;&#x5F0F;&#x7F51;&#x7EDC;&#x642D;&#x5EFA;&#x7684;&#x91D1;&#x878D;&#x4F53;&#x7CFB;&#x3002;&#x867D;&#x7136; DeFi &#x4F5C;&#x4E3A;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x7684;&#x91CD;&#x8981;&#x91D1;&#x878D;&#x4F53;&#x7CFB;&#xFF0C;&#x5BF9;&#x6807;&#x91D1;&#x878D;&#x4F53;&#x7CFB;&#x6709;&#x7740;&#x5B89;&#x5168;&#x6027;&#x3001;&#x7A33;&#x5B9A;&#x6027;&#x3001;&#x4FE1;&#x4EFB;&#x673A;&#x5236;&#x7B80;&#x5355;&#x6709;&#x6548;&#x7684;&#x4F18;&#x52BF;&#xFF0C;&#x4F46;&#x662F;&#x5927;&#x90E8;&#x5206; DeFi &#x4EA7;&#x54C1;&#x9762;&#x4E34;&#x7740;&#x53D7;&#x9650;&#x4E8E;&#x516C;&#x94FE;&#x4EA4;&#x4E92;&#x56F0;&#x96BE;&#x3001;&#x53EF;&#x62B5;&#x62BC;&#x8D44;&#x4EA7;&#x5355;&#x4E00;&#x3001;&#x4EA7;&#x54C1;&#x64CD;&#x4F5C;&#x7E41;&#x7410;&#x7B49;&#x95EE;&#x9898;&#xFF0C;&#x76EE;&#x524D; DeFi &#x53EA;&#x5728;&#x5C11;&#x90E8;&#x5206;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x7528;&#x6237;&#x7FA4;&#x4F53;&#x4E2D;&#x6D41;&#x884C;&#xFF0C;&#x5176;&#x53D1;&#x5C55;&#x4EFB;&#x7136;&#x56F0;&#x96BE;&#x91CD;&#x91CD;&#x3002;</p>
+<p>&#x540C;&#x65F6;&#x5728;&#x7ECF;&#x5386;&#x4E86; 2020 &#x5E74; 3 &#x6708; 12 &#x65E5;&#x52A0;&#x5BC6;&#x6570;&#x5B57;&#x4E16;&#x754C;&#x9ED1;&#x5929;&#x9E45;&#x4E8B;&#x4EF6;&#xFF0C;&#x5F53;&#x65E5;&#x5728;&#x77ED;&#x65F6;&#x95F4;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x6570;&#x5B57;&#x8D27;&#x5E01;&#x51FA;&#x73B0;&#x4E86;&#x5DE8;&#x5E45;&#x66B4;&#x8DCC;&#xFF0C;&#x76F4;&#x63A5;&#x5BFC;&#x81F4;&#x591A;&#x4E2A; DeFi &#x4EA7;&#x54C1;&#x4EE5; MakerDao&#x3001;Compound &#x4E3A;&#x9996;&#x7684;&#x501F;&#x8D37;&#x5E73;&#x53F0;&#x51FA;&#x73B0;&#x4E86;&#x5927;&#x91CF;&#x6E05;&#x7B97;&#x8D44;&#x4EA7;&#x3002;&#x800C;&#x4E0E;&#x6B64;&#x540C;&#x65F6;&#xFF0C;&#x4EE5;&#x592A;&#x574A;&#x7F51;&#x7EDC;&#x51FA;&#x73B0;&#x4E86;&#x53F2;&#x65E0;&#x524D;&#x4F8B;&#x7684;&#x5835;&#x585E;&#x60C5;&#x51B5;&#xFF0C;&#x81F4;&#x4F7F;&#x501F;&#x6B3E;&#x4EBA;&#x65E0;&#x6CD5;&#x7F34;&#x7EB3;&#x4FDD;&#x8BC1;&#x91D1;&#xFF1B;&#x6E05;&#x7B97;&#x4EBA;&#x4E5F;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;&#x4EE5;&#x592A;&#x574A;&#x7F51;&#x7EDC;&#x8F6C;&#x8D26;&#x65B9;&#x5F0F;&#x83B7;&#x5F97;&#x6570;&#x5B57;&#x8D44;&#x4EA7;&#x53BB;&#x62CD;&#x5356;&#x3002;&#x5927;&#x91CF;&#x88AB;&#x6E05;&#x7B97;&#x8D44;&#x4EA7;&#x4EE5;&#x6781;&#x4F4E;&#x751A;&#x81F3; 0DAI &#x7684;&#x4EF7;&#x683C;&#x88AB;&#x6E05;&#x7B97;&#x4EBA;&#x3001;&#x6E05;&#x7B97;&#x673A;&#x5668;&#x4EBA;&#x62CD;&#x8D70;&#xFF0C;&#x9020;&#x6210;&#x4E86;&#x501F;&#x6B3E;&#x4EBA;&#x3001;&#x501F;&#x8D37;&#x5E73;&#x53F0;&#x7684;&#x5DE8;&#x5927;&#x635F;&#x5931;&#x3002;</p>
+<p>&#x4F5C;&#x8005;&#x5B8C;&#x6574;&#x7ECF;&#x5386;&#x4E86;&#x6574;&#x6B21;&#x9ED1;&#x5929;&#x9E45;&#x4E8B;&#x4EF6;&#xFF0C;&#x76EE;&#x7779;&#x4E86;&#x501F;&#x6B3E;&#x4EBA;&#x4E0E;&#x5E73;&#x53F0;&#x7684;&#x635F;&#x5931;&#x540E;&#x51B3;&#x5FC3;&#x7814;&#x53D1;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x501F;&#x8D37;&#x5E73;&#x53F0;&#x3002;&#x8FD9;&#x4E00;&#x60F3;&#x6CD5;&#x5F97;&#x5230;&#x4E86; Conflux &#x6280;&#x672F;&#x793E;&#x533A;&#x7684;&#x591A;&#x6570;&#x4EBA;&#x7684;&#x652F;&#x6301;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x5171;&#x540C;&#x7684;&#x613F;&#x671B;&#x5C31;&#x662F;&#x4E3A;&#x52A0;&#x5BC6;&#x6570;&#x5B57;&#x8D27;&#x5E01;&#x4E16;&#x754C;&#x8D21;&#x732E;&#x81EA;&#x5DF1;&#x7684;&#x529B;&#x91CF;&#x3002;&#x65E2;&#x7136;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x516C;&#x94FE;&#x6027;&#x80FD;&#x65E0;&#x6CD5;&#x627F;&#x8F7D;&#x6076;&#x52A3;&#x60C5;&#x51B5;&#x4E0B; DeFi &#x4EA7;&#x54C1;&#x7684;&#x8FD0;&#x4F5C;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x91C7;&#x7528;&#x6027;&#x80FD;&#x4F18;&#x4E8E;&#x4EE5;&#x592A;&#x574A;&#x767E;&#x500D;&#x7684; Conflux &#x516C;&#x94FE;&#x4F5C;&#x4E3A;&#x5E95;&#x5C42;&#xFF0C;&#x5E76;&#x4E14;&#x5927;&#x91CF;&#x6539;&#x8FDB;&#x73B0;&#x6709; DeFi &#x501F;&#x8D37;&#x4EA7;&#x54C1;&#x7684;&#x5229;&#x7387;&#x6A21;&#x578B;&#x3001;&#x62B5;&#x62BC;&#x6A21;&#x578B;&#x3001;&#x6E05;&#x7B97;&#x903B;&#x8F91;&#x7B49;&#xFF0C;&#x53BB;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x66F4;&#x52A0;&#x4F18;&#x79C0;&#x80FD;&#x591F;&#x62B5;&#x5FA1;&#x201C;&#x5341;&#x5E74;&#x6D2A;&#x6C34;&#x201D;&#x7EA7;&#x522B;&#x7684;&#x707E;&#x96BE;&#x7684; DeFi &#x4EA7;&#x54C1;&#x2014;&#x2014;Flux&#x3002;</p>
+<ol>
+<li><strong>Flux&#x534F;&#x8BAE;</strong></li>
+</ol>
+<p>Flux &#x662F;&#x4E00;&#x5957;&#x5B8C;&#x6574;&#x7684;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x501F;&#x8D37;&#x534F;&#x8BAE;&#xFF0C;&#x57FA;&#x4E8E;&#x6B64;&#x534F;&#x8BAE;&#xFF0C;&#x4EFB;&#x4F55;&#x4EBA;&#x90FD;&#x53EF;&#x4EE5;&#x9002;&#x914D;&#x5F00;&#x53D1;&#x591A;&#x6837;&#x7684;&#x501F;&#x8D37;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>a. &#x8D44;&#x4EA7;&#x4E0E;&#x4EE3;&#x5E01;</p>
+<p>Flux &#x534F;&#x8BAE;&#x6240;&#x652F;&#x6301;&#x7684;&#x8D44;&#x4EA7;&#x9664;Conflux&#x5E73;&#x53F0;&#x5E01; CFX&#x5916;&#xFF0C;&#x5176;&#x4ED6;&#x8D44;&#x4EA7;&#x5FC5;&#x987B;&#x7B26;&#x5408; ERC-777 &#x6807;&#x51C6;&#x3002;</p>
+<p>&#x4E0E;Compound&#x534F;&#x8BAE;&#x7C7B;&#x4F3C;&#xFF0C;Flux &#x534F;&#x8BAE;&#x662F;&#x5C06;&#x6BCF;&#x4F4D;&#x7528;&#x6237;&#x4F9B;&#x5E94;&#x7684;&#x8D44;&#x4EA7;&#x805A;&#x5408;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x805A;&#x5408;&#x7684;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x4F9B;&#x5E94;&#x8D44;&#x4EA7;&#x65F6;&#xFF0C;&#x5B83;&#x53D8;&#x6210;&#x4E86;&#x53EF;&#x53D8;&#x73B0;&#x7684;&#x8D44;&#x6E90;&#x3002;&#x6D41;&#x52A8;&#x6027;&#x63D0;&#x4F9B;&#x8005;&#xFF08;&#x5B58;&#x6B3E;&#x4EBA;&#xFF09;&#x53EF;&#x4EE5;&#x968F;&#x65F6;&#x63D0;&#x53D6;&#x8D44;&#x4EA7;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x7279;&#x5B9A;&#x7684;&#x5B58;&#x6B3E;&#x5230;&#x671F;&#x65E5;&#x3002;</p>
+<p>&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x4E2D;&#x7684;&#x4F59;&#x989D;&#x6839;&#x636E;&#x8BE5;&#x8D44;&#x4EA7;&#x7279;&#x6709;&#x7684;&#x4F9B;&#x5E94;&#x5229;&#x7387;&#x8BA1;&#x606F;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5B9E;&#x65F6;&#x67E5;&#x770B;&#x4ED6;&#x4EEC;&#x7684;&#x4F59;&#x989D;&#xFF08;&#x5E94;&#x8BA1;&#x5229;&#x606F;&#x5305;&#x62EC;&#x5E94;&#x6536;&#x5229;&#x606F;&#x548C;&#x5E94;&#x4ED8;&#x5229;&#x606F;&#xFF09;&#xFF1B;&#x5F53;&#x7528;&#x6237;&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x4ED6;&#x7684;&#x4F59;&#x989D;&#x7684;&#x4EA4;&#x6613;&#xFF08;&#x4F9B;&#x5E94;&#x3001;&#x8F6C;&#x79FB;&#x6216;&#x63D0;&#x53D6;&#x4EE3;&#x5E01;&#xFF09;&#x65F6;&#xFF0C;&#x5E94;&#x8BA1;&#x5229;&#x606F;&#x88AB;&#x8F6C;&#x6362;&#x6210;&#x672C;&#x91D1;&#x5E76;&#x652F;&#x4ED8;&#x7ED9;&#x7528;&#x6237;&#x3002;</p>
+<p>&#x957F;&#x671F;&#x6301;&#x6709;CFX&#x6216;&#x5176;&#x4ED6;&#x8D44;&#x4EA7;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x8D44;&#x4EA7;&#x4F9B;&#x5E94;&#x5230;Flux&#x8D27;&#x5E01;&#x5E02;&#x573A;&#xFF0C;&#x4EE5;&#x83B7;&#x5F97;&#x989D;&#x5916;&#x7684;&#x6295;&#x8D44;&#x56DE;&#x62A5;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x62E5;&#x6709; CFX &#x7684;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5C06;&#x4ED6;&#x4EEC;&#x7684; CFX &#x8D44;&#x4EA7;&#x4F9B;&#x5E94;&#x7ED9; Flux &#x8D27;&#x5E01;&#x5E02;&#x573A;&#xFF0C;&#x5E76;&#x8D5A;&#x53D6;&#x5229;&#x606F;&#xFF08;&#x4EE5; CFX &#x8BA1;&#x606F;&#xFF09;&#x3002;&#x800C;&#x65E0;&#x9700;&#x82B1;&#x8D39;&#x7CBE;&#x529B;&#x7BA1;&#x7406;&#x8D44;&#x4EA7;&#xFF0C;&#x65E0;&#x9700;&#x627F;&#x62C5;&#x6295;&#x673A;&#x98CE;&#x9669;&#x3002;</p>
+<ol>
+<li>&#x501F;&#x7528;&#x8D44;&#x4EA7;
+Borrowing Assets</li>
+</ol>
+<p>Flux &#x5141;&#x8BB8;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x4FE1;&#x7528;&#x8D28;&#x62BC;&#x8F7B;&#x677E;&#x501F;&#x8D70;&#x8D44;&#x4EA7;&#xFF0C;&#x7528;&#x6237;&#x5BF9;&#x501F;&#x51FA;&#x8D44;&#x4EA7;&#x62E5;&#x6709;&#x5B8C;&#x5168;&#x6240;&#x6709;&#x6743;&#xFF0C;&#x53EF;&#x81EA;&#x7531;&#x652F;&#x914D;&#xFF0C;&#x53EF;&#x5E94;&#x7528;&#x5230;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x53EF;&#x4EE5;&#x5230;&#x8FBE;&#x7684;&#x5730;&#x65B9;&#x3002;&#x7528;&#x6237;&#x65E0;&#x9700;&#x8BBE;&#x5B9A;&#x8FD8;&#x6B3E;&#x65E5;&#x3001;&#x501F;&#x6B3E;&#x5229;&#x606F;&#x7B49;&#xFF0C;&#x53EA;&#x9700;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x501F;&#x8D70;&#x4F55;&#x79CD;&#x8D44;&#x4EA7;&#xFF0C;&#x5373;&#x53EF;&#x5FEB;&#x901F;&#x501F;&#x8D70;&#x8D44;&#x4EA7;&#x3002;&#x5982;&#x679C;&#x662F;&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x4E00;&#x952E;&#x4ECE; Conflux &#x94FE;&#x4E2D;&#x501F;&#x51FA;&#x8D44;&#x4EA7;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x4EE5;&#x592A;&#x574A;&#x6216;&#x8005;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#x4E2D;&#x3002;</p>
+<p>&#x4E0E;&#x4F9B;&#x5E94;&#x8D44;&#x4EA7;&#x7C7B;&#x4F3C;&#xFF0C;&#x6BCF;&#x4E2A;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x7531;&#x5E02;&#x573A;&#x8D44;&#x4EA7;&#x5229;&#x7528;&#x7387;&#x51B3;&#x5B9A;&#x7684;&#x6D6E;&#x52A8;&#x5229;&#x7387;&#xFF0C;&#x8BE5;&#x5229;&#x7387;&#x51B3;&#x5B9A;&#x4E86;&#x501F;&#x6B3E;&#x6210;&#x672C;&#xFF08;&#x501F;&#x6B3E;&#x5229;&#x606F;&#xFF09;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x63A7;&#x5236;&#x98CE;&#x9669;&#xFF0C;Flux&#x6839;&#x636E;&#x98CE;&#x9669;&#x8BBE;&#x5B9A;&#x6BCF;&#x79CD;&#x8D44;&#x4EA7;&#x7684;&#x62B5;&#x62BC;&#x56E0;&#x5B50;&#xFF08;&#x89C1;&#x8868;1&#xFF09;&#xFF0C;&#x4E0D;&#x53EF;&#x8D85;&#x989D;&#x62B5;&#x62BC;&#xFF0C;&#x7ED3;&#x5408;&#x8D44;&#x4EA7;&#x4EF7;&#x683C;&#x3001;&#x4F59;&#x989D;&#x3001;&#x62B5;&#x62BC;&#x56E0;&#x5B50;&#x53EF;&#x4E3A;&#x6BCF;&#x4E2A;&#x8D26;&#x6237;&#x52A8;&#x6001;&#x8BA1;&#x7B97;&#x501F;&#x6B3E;&#x989D;&#x5EA6;&#xFF1B;&#x6BCF;&#x4E2A;&#x8D26;&#x6237;&#x53EF;&#x62B5;&#x62BC;&#x8D44;&#x4EA7;&#x5E76;&#x5728;&#x501F;&#x6B3E;&#x989D;&#x5EA6;&#x5185;&#x501F;&#x51FA;&#x8D44;&#x4EA7;&#xFF1B;&#x62B5;&#x62BC;&#x8D44;&#x4EA7;&#x4E0D;&#x53EF;&#x53D6;&#x51FA;&#xFF0C;&#x4F46;&#x540C;&#x6837;&#x53EF;&#x8D5A;&#x53D6;&#x5B58;&#x6B3E;&#x5229;&#x606F;</p>
+<p>&#x540C;&#x65F6;&#xFF0C;&#x6BCF;&#x4E2A;&#x8D26;&#x6237;&#x7684;&#x501F;&#x6B3E;&#x4F59;&#x989D;&#x4E0D;&#x5F97;&#x8D85;&#x8FC7;&#x501F;&#x6B3E;&#x989D;&#x5EA6;&#xFF0C;&#x8D26;&#x6237;&#x5B58;&#x6B3E;&#x989D;&#x548C;&#x501F;&#x6B3E;&#x989D;&#x4E4B;&#x6BD4;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x62B5;&#x62BC;&#x7387;&#x3002;&#x5F53;&#x62B5;&#x62BC;&#x7387;&#x4F4E;&#x4E8E;&#x67D0;&#x9600;&#x503C;&#x65F6;&#xFF08;&#x6E05;&#x7B97;&#x62B5;&#x62BC;&#x7387;&#xFF09;&#x5C06;&#x89E6;&#x53D1;&#x6E05;&#x7B97;&#xFF1B;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x8FFD;&#x52A0;&#x5B58;&#x6B3E;&#x6216;&#x8005;&#x507F;&#x8FD8;&#x5168;&#x90E8;&#x6216;&#x90E8;&#x5206;&#x501F;&#x6B3E;&#x6765;&#x63D0;&#x9AD8;&#x62B5;&#x62BC;&#x7387;&#xFF0C;&#x907F;&#x514D;&#x8D44;&#x4EA7;&#x88AB;&#x6E05;&#x7B97;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x8D44;&#x4EA7;&#x98CE;&#x9669;&#x7EA7;&#x522B;</th>
+<th style="text-align:left">&#x8D28;&#x62BC;&#x56E0;&#x5B50;</th>
+<th style="text-align:left">&#x8D44;&#x4EA7;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x7A33;&#x5B9A;&#x5E01;</td>
+<td style="text-align:left">130%</td>
+<td style="text-align:left">USDT&#x3001;USDC&#x3001;GUSD&#x3001;DAI&#x7B49;&#x5E02;&#x573A;&#x5177;&#x5907;&#x4FDD;&#x6709;&#x91CF;&#x3001;&#x4EA4;&#x6613;&#x6DF1;&#x5EA6; &#x3001;&#x63A5;&#x53D7;&#x5EA6;&#x7684;&#x7A33;&#x5B9A;&#x5E01;&#x79CD;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x4F4E;&#x98CE;&#x9669;</td>
+<td style="text-align:left">140%</td>
+<td style="text-align:left">BTC&#x3001;ETH&#x4E0E;OKB&#x3001;HT&#x3001;BNB&#x5E73;&#x53F0;&#x5E01;&#xFF1B;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x4E2D;&#x98CE;&#x9669;</td>
+<td style="text-align:left">150%</td>
+<td style="text-align:left">XRP&#x3001;BCH&#x3001;BSV&#x3001;LTC&#x3001;EOS&#x3001;ADA&#x7B49;&#x8FDB;&#x5165;&#x6574;&#x4E2A;CoinMarketCap TOP10&#x7684;&#x5E01;&#x79CD;&#xFF1B;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x9AD8;&#x98CE;&#x9669;</td>
+<td style="text-align:left">160%</td>
+<td style="text-align:left">&#x975E;1&#x3001;2&#x3001;3&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x5E01;&#x79CD;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x8868;1-&#x8D44;&#x4EA7;&#x8D28;&#x62BC;&#x56E0;&#x5B50;</p>
+<p>&#x98CE;&#x9669;&#x4E0E;&#x6E05;&#x7B97; </p>
+<p>&#x4E3A;&#x4E86;&#x964D;&#x4F4E; Flux &#x534F;&#x8BAE;&#x98CE;&#x9669;&#xFF0C;&#x4FDD;&#x62A4;&#x6D41;&#x52A8;&#x6027;&#x63D0;&#x4F9B;&#x8005;&#xFF0C;&#x5F53;&#x501F;&#x6B3E;&#x4EBA;&#x8D26;&#x6237;&#x62B5;&#x62BC;&#x7387;&#x4F4E;&#x4E8E;&#x6E05;&#x7B97;&#x62B5;&#x62BC;&#x7387;&#x65F6;&#xFF0C;&#x8BE5;&#x501F;&#x6B3E;&#x4EBA;&#x7684;&#x5B58;&#x6B3E;&#x8D44;&#x4EA7;&#x5C06;&#x88AB;&#x4EFB;&#x610F;&#x8D26;&#x6237;&#xFF08;&#x6E05;&#x7B97;&#x4EBA;&#xFF09;&#x6E05;&#x7B97;&#xFF0C;&#x4EE5;&#x507F;&#x8FD8;&#x501F;&#x6B3E;&#x5230;&#x6D41;&#x52A8;&#x6027;&#x4E2D;&#x3002;&#x6E05;&#x7B97;&#x4EBA;&#x5FC5;&#x9700;&#x66FF;&#x501F;&#x6B3E;&#x4EBA;&#x507F;&#x8FD8;&#x6240;&#x6709;&#x501F;&#x6B3E;&#x5230;&#x6D41;&#x52A8;&#x6027;&#x6C60;&#x4E2D;&#xFF0C;&#x624D;&#x80FD;&#x83B7;&#x5F97;&#x501F;&#x6B3E;&#x4EBA;&#x7684;&#x5168;&#x90E8;&#x5B58;&#x6B3E;&#xFF08;&#x62B5;&#x62BC;&#x8D44;&#x4EA7;&#xFF09;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#xFF0C;&#x6E05;&#x7B97;&#x62B5;&#x62BC;&#x7387;&#x662F;&#x5E38;&#x91CF;110%&#xFF0C;&#x8D26;&#x6237;&#x62B5;&#x62BC;&#x7387;&#x662F;&#x8D26;&#x6237;&#x5B58;&#x6B3E;&#x548C;&#x501F;&#x6B3E;&#x989D;&#x4E4B;&#x6BD4;&#x3002;</p>
+<p>&#x4EFB;&#x4F55;Conflux &#x94FE;&#x4E0A;&#x5730;&#x5740;&#x5747;&#x53EF;&#x516C;&#x5E73;&#x3001;&#x96F6;&#x963B;&#x529B;&#x53C2;&#x4E0E;&#x6E05;&#x7B97;&#xFF0C;&#x4E0D;&#x4F9D;&#x8D56;&#x4EFB;&#x4F55;&#x4E2D;&#x5FC3;&#x5316;&#x7CFB;&#x7EDF;&#x3002;&#x6839;&#x636E;&#x65F6;&#x95F4;&#x4F18;&#x5148;&#x539F;&#x5219;&#xFF0C;&#x6E05;&#x7B97;&#x4EBA;&#x53EF;&#x5C06;&quot;&#x6E05;&#x7B97;&#x8D26;&#x6237;&quot;&#xFF08;&#x5373;&#x4F4E;&#x4E8E;&#x6E05;&#x7B97;&#x62B5;&#x62BC;&#x7387;&#x7684;&#x8D26;&#x6237;&#xFF09;&#x6E05;&#x7B97;&#x3002;</p>
+<p>&#x5F53;&#x8D26;&#x6237;&#x62B5;&#x62BC;&#x7387;&#x8FDC;&#x4F4E;&#x4E8E;&#x6E05;&#x7B97;&#x62B5;&#x62BC;&#x7387;&#xFF0C;&#x8DCC;&#x7834;102% &#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x7A7F;(breakdown)&#x4ED3;&#x3002;&#x6B64;&#x65F6;&#xFF0C;Flux &#x534F;&#x8BAE;&#x6307;&#x5B9A;&#x7684;&#x7279;&#x5B9A;&#x6E05;&#x7B97;&#x4EBA;&#x53C2;&#x4E0E;&#x6E05;&#x7B97;&#x3002;&#x7A7F;&#x4ED3;&#x6E05;&#x7B97;&#x5FC5;&#x7136;&#x662F;&#x4E8F;&#x635F;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x6E05;&#x7B97;&#x4EBA;&#x5728;&#x6E05;&#x7B97;&#x8D44;&#x4EA7;&#x65F6;&#x9700;&#x652F;&#x4ED8;6%&#x624B;&#x7EED;&#x8D39;&#x5230;&#x7279;&#x5B9A;&#x6E05;&#x7B97;&#x4EBA;&#x5408;&#x7EA6;&#x4E2D;&#xFF0C;&#x4F5C;&#x4E3A;&#x6E05;&#x7B97;&#x50A8;&#x5907;&#x91D1;&#xFF0C;&#x4F9B;&#x7A7F;&#x4ED3;&#x6E05;&#x7B97;&#x4F7F;&#x7528;&#x548C;&#x63D0;&#x4F9B;&#x6D41;&#x52A8;&#x6027;&#x3002;</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615383685985-431a620d-0171-4ca6-8254-c57c76728ac3.png" alt=""></p>
+<ol>
+<li>&#x53D6;&#x6B3E;&#x9650;&#x5236; Withdrawal Limitation</li>
+</ol>
+<p>&#x4E3A;&#x9632;&#x6B62;&#x501F;&#x6B3E;&#x4EBA;&#x63D0;&#x53D6;&#x8D44;&#x4EA7;&#x5F15;&#x53D1;&#x6E05;&#x7B97;&#x98CE;&#x9669;&#xFF0C;Fluxe &#x534F;&#x8BAE;&#x5F3A;&#x5236;&#x8981;&#x6C42;&#x501F;&#x6B3E;&#x4EBA;&#x63D0;&#x53D6;&#x8D44;&#x4EA7;&#x540E;&#x62B5;&#x62BC;&#x7387;&#x4E0D;&#x5F97;&#x4F4E;&#x4E8E;120%&#xFF0C;&#x9664;&#x975E;&#x501F;&#x6B3E;&#x4EBA;&#x8FD8;&#x8BF7;&#x6240;&#x6709;&#x501F;&#x6B3E;&#x3002;</p>
+<ol>
+<li>&#x5229;&#x7387;&#x6A21;&#x578B; Interest Rate Model</li>
+</ol>
+<p>Flux &#x534F;&#x8BAE;&#x6BCF;&#x4E2A;&#x7684;&#x8D27;&#x5E01;&#x5E02;&#xFF0C;&#x6839;&#x8BE5;&#x5E02;&#x573A;&#x4E2D;&#x4E2A;&#x8D44;&#x4EA7;&#x7684;&#x4F9B;&#x5E94;&#x5173;&#x7CFB;&#xFF08;&#x8D44;&#x91D1;&#x5229;&#x7528;&#x7387;&#x6765;&#x5B9E;&#x52A8;&#x6001;&#x8861;&#x5229;&#x7387;&#xFF0C;&#x65E0;&#x9700;&#x501F;&#x6B3E;&#x4EBA;&#x548C;&#x5B58;&#x6B3E;&#x4EBA;&#x53CC;&#x65B9;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x6761;&#x6B3E;&#x548C;&#x5229;&#x7387;&#x8C08;&#x5224;&#xFF0C;&#x4F9D;&#x636E;&#x5E02;&#x573A;&#x5229;&#x7387;&#x5B8C;&#x6210;&#x8D44;&#x4EA7;&#x6D41;&#x52A8;&#x3002;&#x6BCF;&#x4E2A;&#x8D27;&#x5E01;&#x5E02;&#x573A; a &#x6709;&#x72EC;&#x7ACB;&#x5229;&#x7387;&#x3002;&#x6BCF;&#x4E2A;&#x8D27;&#x5E01;&#x5E02;&#x573A;a&#x7684;&#x5229;&#x7528;&#x7387;Ua&#x5C06;&#x8D44;&#x4EA7;&#x4F9B;&#x5E94;&#x5173;&#x7CFB;&#x7EDF;&#x4E00;&#x4E3A;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF1A;</p>
+<p>Ua =Borrowsa/(Borrowsa+Casha)</p>
+<p>&#x5176;&#x4E2D;Borrowsa&#x8868;&#x793A;&#x8D27;&#x5E01;&#x5E02;&#x573A;a&#x4E2D;&#x672A;&#x507F;&#x8FD8;&#x7684;&#x501F;&#x6B3E;&#x4F59;&#x989D;&#xFF1B;Casha&#x8868;&#x793A;&#x4F9B;&#x5E94;&#x5230;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x7684;&#x8D44;&#x4EA7;&#x4F59;&#x989D;&#x3002;&#x9075;&#x5FAA;&#x7ECF;&#x6D4E;&#x5B66;&#x539F;&#x7406;&#xFF0C;&#x5F53;&#x501F;&#x6B3E;&#x9700;&#x6C42;&#x4F4E;&#x8FF7;&#x65F6;&#xFF0C;&#x5229;&#x7387;&#x5E94;&#x662F;&#x4F4E;&#x7684;&#xFF1B;&#x76F8;&#x53CD;&#xFF0C;&#x5F53;&#x501F;&#x6B3E;&#x9700;&#x6C42;&#x65FA;&#x76DB;&#x65F6;&#xFF0C;&#x5229;&#x7387;&#x5E94;&#x8BE5;&#x662F;&#x4E0A;&#x5347;&#x7684;&#x3002;&#x501F;&#x6B3E;&#x9700;&#x6C42;&#x901A;&#x8FC7;&#x5229;&#x7528;&#x7387;&#x51FD;&#x6570;&#x8868;&#x793A;&#xFF0C;&#x5F53;&#x524D;&#x8BBE;&#x5B9A;&#x501F;&#x6B3E;&#x5229;&#x7387;(Borrow Interest Rate)&#x662F;&#x7531;&#x5229;&#x7528;&#x7387;&#x4E0E;&#x4E00;&#x4E2A;&#x57FA;&#x7840;&#x5229;&#x7387;&#xFF08;0.005&#xFF09;&#x5F97;&#x5230;&#xFF0C;&#x4E14;&#x4E0D;&#x8D85;&#x8FC7;95%&#xFF1A;</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615383685963-973a538e-ec5f-49ff-82b1-a40aaa45707d.png" alt=""></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615383685969-85e68cfd-92a0-480c-9621-dfbd90155b3b.png" alt=""></p>
+<p>&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x4E2D;&#x6052;&#x5B9A;&#x6709;&#xFF1A;</p>
+<p>Within onemoney marketa, there is the following interest rate equilibrium:</p>
+<p>Borrowsa *Borrowing Interrest Ratea= Suppliesa *90%*Supply Interest Ratea</p>
+<p>Borrowsb *Borrowing Interrest Rateb= Suppliesb *80%*Supply Interest Rateb</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x5F97;&#x5230;&#x4F7F;&#x7528;&#x7387;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x5229;&#x7387;&#x53D8;&#x5316;&#x66F2;&#x7EBF;&#x56FE;&#x3002;&#x5F53;&#x8D44;&#x91D1;&#x4F7F;&#x7528;&#x7387;&#x4E3A;0&#x65F6;&#xFF0C;&#x501F;&#x6B3E;&#x5229;&#x7387;&#x4E3A;0.0053&#xFF0C;&#x5B58;&#x6B3E;&#x5229;&#x7387;&#x4E3A;0&#x3002;&#x3002;</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615383686011-26218960-1d84-4ed7-9c28-d987df2091c7.png" alt=""></p>
+<p>The figure below shows the interest rate change influenced by the utilization rate, where the fund utilization rate is 0, the borrowing rate is 0.005 and the deposit rate is 0&#xFF1A;</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615383685999-dc4e8203-3307-4601-87b2-8ac1fa62cacb.png" alt=""></p>
+<p><strong>&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x81EA;&#x6CBB; Decentralized Autonmous Organizationy</strong></p>
+<p>Flux &#x534F;&#x8BAE;&#x8981;&#x6C42;&#x5BF9;&#x534F;&#x8BAE;&#x7684;&#x4EFB;&#x4F55;&#x4FEE;&#x6539;&#x90FD;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x81EA;&#x6CBB;&#x7EC4;&#x7EC7;&#xFF08;&#x7B80;&#x79F0;DAO&#xFF09;&#x6295;&#x7968;&#x901A;&#x8FC7;&#x540E;&#x624D;&#x80FD;&#x751F;&#x3002;&#x3002;&#x8FD9;&#x662F; Flux &#x534F;&#x8BAE;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x8FC7;&#x3002;&#xFF0C;&#x5728; Flux &#x534F;&#x8BAE;&#x7684;&#x65E9;&#x671F;&#x5C06;&#x7531; Flux &#x5F00;&#x53D1;&#x56E2;&#x961F;&#x5185;&#x90E8;&#x7BA1;&#x7406; DAO&#xFF0C;&#x5728; Flux &#x534F;&#x8BAE;&#x5B9E;&#x73B0;&#x5B8C;&#xFF0C;&#x4E14;&#x7A33;&#x5B9A;&#x540E; Flux &#x5F00;&#x53D1;&#x56E2;&#x961F;&#x5C06;&#x5BF9; Flux &#x7684;&#x7BA1;&#x7406;&#x6743;&#x9650;&#x79FB;&#x4EA4;&#x7ED9;&#x793E;&#x533A;DAO&#x3002;</p>
+<p>The Flux protooal requires that any modification to theprotocolmust be voted through the Decentralized Autonomous Organization (DAO) to take effect. This is to decentralize the Fluxprotocol. In the early stages of Flux Protocol, the Flux Development Team will manage the DAO internally. After the Flux Protocol is complete and stable, the Flux Development Team will transfer the management authority of Flux to the DAO community.</p>
+<ol>
+<li><strong>&#x5B9E;&#x65BD;&#x4E0E;&#x67B6;&#x6784;</strong></li>
+</ol>
+<p>Flux &#x6838;&#x5FC3;&#x662F;&#x4F7F;&#x7528;Solidity&#x7F16;&#x5199;&#xFF0C;&#x6240;&#x6709; Conflux &#x8D26;&#x6237;&#x90FD;&#x53EF;&#x516C;&#x5F00;&#xFF0C;&#x96F6;&#x963B;&#x529B;&#x4F7F;&#x7528; Flux&#x3002;&#x4E14;&#x63D0;&#x4F9B;&#x5404;&#x79CD;&#x63A5;&#x53E3;&#x7ED9;&#x5E02;&#x573A;&#x4E2D;&#x7684;&#x501F;&#x6B3E;&#x4EBA;&#x3001;&#x5B58;&#x6B3E;&#x4EBA;&#x3001;&#x6E05;&#x7B97;&#x4EBA;&#x7B49;&#x5404;&#x7C7B;&#x5E02;&#x573A;&#x53C2;&#x4E0E;&#x8005;&#x3002;</p>
+<p>Flux Protocol is written in Solidity, and all Conflux Network accounts can interact with the platform. Flux Protocol provides various interfaces to various market participants such as borrowers, depositors, and liquidators, etc..</p>
+<p>Flux &#x534F;&#x8BAE;&#x5728;&#x9AD8;&#x6548;&#x7684;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x533A;&#x5757;&#x94FE;&#x7F51;&#x7EDC; Conflux &#x4E2D;&#x5B9E;&#x65BD;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x8DE8;&#x94FE;&#x7CFB;&#x7EDF; ShuttleFlow &#x5BF9;&#x63A5;&#x4EE5;&#x592A;&#x574A;&#x6216;&#x6BD4;&#x7279;&#x5E01;&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;&#x3002;&#x91C7;&#x7528; Conflux &#x533A;&#x5757;&#x94FE;&#x7684;&#x4F18;&#x52BF;&#x6709;</p>
+<p>The Flux protocol isbuild on Conflu Network and utilizesg the cross-chainmechanism ShuttleFlow tointeract with cross-chained Ethereum or Bitcoin assets. The advantages of using Conflux blockchain are::</p>
+<ol>
+<li>Conflux &#x4E3B;&#x7F51;&#x6027;&#x80FD;&#x8F83;&#x4E4B;&#x4E8E; Ethereum &#x66F4;&#x9AD8;&#xFF0C;Gas &#x8D39;&#x66F4;&#x4F4E;
+&#xFF1B;</li>
+<li><p>&#x6D41;&#x52A8;&#x6027;&#x66F4;&#x597D;&#xFF0C;&#x4F8B;&#x5982; wBTC&#x3001;imBTC &#x7B49;&#x90FD;&#x4EE5; fBTC &#x65B9;&#x5F0F;&#x5B58;&#x50A8;/&#x62B5;&#x62BC;&#xFF0C;&#x5171;&#x4EAB;&#x6D41;&#x52A8;&#x6027;&#xFF1B;</p>
+</li>
+<li><p>&#x5B89;&#x5168;&#x6027;&#x66F4;&#x9AD8;&#xFF0C;&#x8BE6;&#x7EC6;&#x8BF7;&#x89C1; 2.3.3&#x3002;</p>
+</li>
+<li><p>The performance of ConfluxNetworkt is higher<br>and the transaction fees lower thann Ethereum.</p>
+</li>
+<li><p>Conflux has aimproved<br>r liquidit.,Ffor example, wBTC, imBTC and alik<br> aresuppliedd<br>collateralized<br> via fBTC andenjoy<br> sharde liquidity<br>through this methody.</p>
+</li>
+<li><p>Conflux has a higher security, please refer to 2.3.3.</p>
+</li>
+<li><p>&#x8D27;&#x5E01;&#x5E02;&#x573A;money market</p>
+</li>
+</ol>
+<p>Flux &#x534F;&#x8BAE;&#x4E3A;&#x6BCF;&#x79CD;&#x8D44;&#x4EA7;&#x5F00;&#x8F9F;&#x72EC;&#x7ACB;&#x7684;&#x8D27;&#x5E01;&#x5E02;&#x573A;MoneyMarket&#xFF0C;&#x4E5F;&#x79F0;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x5E02;&#x573A;&#x3002;&#x6211;&#x4EEC;&#x628A;&#x8D44;&#x4EA7;&#x5728; Flux &#x534F;&#x8BAE;&#x4E2D;&#x6620;&#x5C04;&#x6210;&#x6807;&#x51C6;&#x7684;ERC20 Token&#xFF1A; fToken&#x3002;&#x501F;&#x6B3E;&#x4EBA;&#x5C06;&#x8D44;&#x4EA7;&#x8F6C;&#x8D26;&#x81F3;&#x8BE5;&#x5408;&#x7EA6;&#xFF0C;&#x53EF;&#x4EE5;&#x5151;&#x6362;&#x6210; fToken&#xFF1B;&#x968F;&#x7740;&#x65F6;&#x95F4;&#x7684;&#x63A8;&#x79FB;&#xFF0C;&#x501F;&#x6B3E;&#x4EBA;&#x53EF;&#x4EE5;&#x83B7;&#x5F97; fToken &#x5229;&#x606F;&#x56DE;&#x62A5;&#x3002;&#x8868;2&#x662F;Flux &#x4E0A;&#x7EBF;&#x7684;&#x9996;&#x6279;&#x8D44;&#x4EA7;&#x6E05;&#x5355;&#x4EE5;&#x53CA;&#x6620;&#x5C04;&#x7684; fToken &#x4FE1;&#x606F;&#x3002;</p>
+<p>The Flux protocol opens up an independent money market for each asset, it is also known as the lending market. We define the assets in the Flux protocol as standard ERC20 Token: fToken. The borrowers transfer assets to the contract, and their assets can be converted into fToken; over time, the borrowers can gain fToken interest returns. Table 2 is a list of the first batch of assets launched by Flux and the corresponding fToken information.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x8D44;&#x4EA7;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th style="text-align:left">ctoken&#xFF08;ERC777&#xFF09;</th>
+<th style="text-align:left">ftoken&#xFF08;ERC20&#xFF09;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">BTC</td>
+<td style="text-align:left">&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;</td>
+<td style="text-align:left">cBTC</td>
+<td style="text-align:left">fBTC</td>
+</tr>
+<tr>
+<td style="text-align:left">ETH</td>
+<td style="text-align:left">&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;</td>
+<td style="text-align:left">cETH</td>
+<td style="text-align:left">fETH</td>
+</tr>
+<tr>
+<td style="text-align:left">USDT</td>
+<td style="text-align:left">&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;</td>
+<td style="text-align:left">cUSDT</td>
+<td style="text-align:left">fUSDT</td>
+</tr>
+<tr>
+<td style="text-align:left">DAI</td>
+<td style="text-align:left">&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;</td>
+<td style="text-align:left">cDAI</td>
+<td style="text-align:left">fDAI</td>
+</tr>
+<tr>
+<td style="text-align:left">CFX</td>
+<td style="text-align:left">&#x5E73;&#x53F0;&#x5E01;</td>
+<td style="text-align:left">&#x65E0;</td>
+<td style="text-align:left">fCFX</td>
+</tr>
+</tbody>
+</table>
+<p>&#x8868;2-Flux&#x9996;&#x6279;&#x501F;&#x8D37;&#x8D44;&#x4EA7;</p>
+<p>table-2 fist Flux lending assets</p>
+<ol>
+<li><strong>&#x5229;&#x7387; Interest Rate</strong></li>
+</ol>
+<p>&#x548C; Compound &#x76F8;&#x540C;&#xFF0C;Flux&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x662F;&#x7531;&#x4E00;&#x5BF9;&#x73B0;&#x884C;&#x5229;&#x7387;&#xFF08;&#x4F9B;&#x7ED9;&#x548C;&#x501F;&#x6B3E;&#x5229;&#x7387;&#xFF09;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x7EDF;&#x4E00;&#x9002;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x7528;&#x6237;&#xFF0C;&#x968F;&#x7740;&#x65F6;&#x95F4;&#x7684;&#x63A8;&#x79FB;&#xFF0C;&#x8FD9;&#x5BF9;&#x5229;&#x7387;&#x4F1A;&#x968F;&#x7740;&#x4F9B;&#x6C42;&#x5173;&#x7CFB;&#x7684;&#x53D8;&#x5316;&#x800C;&#x8C03;&#x6574;&#x3002;</p>
+<p>Like Compound, the Flux money market is defined by a pair of current interest rates (supply and borrowing rates), which are applicable to all users. With passage of time, this pair of interest rates will be adjusted once changes in supply and demand take place.</p>
+<p>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x6765;&#x8BF4;&#xFF0C;&#x6BCF;&#x6B21;&#x5229;&#x7387;&#x7684;&#x53D8;&#x5316;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x5229;&#x7387;&#x6307;&#x6570;&#xFF08;Interest Rate Index&#xFF09;&#x6765;&#x638C;&#x63E1;&#x7684;&#x3002;&#x6BCF;&#x6B21;&#x5229;&#x7387;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x90FD;&#x662F;&#x7531;&#x7528;&#x6237;&#x4F9B;&#x7ED9;&#x3001;&#x53D6;&#x6B3E;&#x3001;&#x501F;&#x6B3E;&#x3001;&#x507F;&#x8FD8;&#x6216;&#x6E05;&#x7B97;&#x8D44;&#x4EA7;&#x6240;&#x4EA7;&#x751F;&#x3002;&#x7528;&#x6237;&#x4F59;&#x989D;&#x5305;&#x62EC;&#x5E94;&#x8BB0;&#x5229;&#x606F;&#xFF0C;&#x7B80;&#x5355;&#x5730;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;&#x5F53;&#x524D;&#x5229;&#x7387;&#x6307;&#x6570;&#x9664;&#x4EE5;&#x7528;&#x6237;&#x4F59;&#x989D;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x66F4;&#x65B0;&#x65F6;&#x7684;&#x5229;&#x7387;&#x6307;&#x6570;&#x4E4B;&#x6BD4;&#x3002;</p>
+<p>For every monetary market, every change in interest rates is controlled by the Interest Rate Index. The change of the interest rate is a result of user actions like supply, withdrawal, borrowing, repayment or liquidation of assets. User balance includes interest payable, which is simply the ratio of the current interest rate index divided by the interest rate index when the user balance was last updated.</p>
+<p>&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x4E2D;&#x6BCF;&#x4E2A;&#x8D26;&#x6237;&#x5730;&#x5740;&#x7684;&#x4F59;&#x989D;&#x4F5C;&#x4E3A; account checkpoint &#x5B58;&#x50A8;&#xFF0C;account checkpoint &#x662F;&#x4E00;&#x4E2A; Solidity &#x5143;&#x7EC4; &lt;uint256 borrows,uint256 interestIndex&gt;&#xFF0C;&#x8FD9;&#x4E2A;&#x5143;&#x7EC4;&#x63CF;&#x8FF0;&#x4E86;&#x8D26;&#x6237;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x66F4;&#x65B0;&#x501F;&#x6B3E;&#x65F6;&#x7684;&#x5229;&#x7387;&#x6307;&#x6570;&#x548C;&#x501F;&#x6B3E;&#x4F59;&#x989D;&#x3002;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x7684;&#x5F53;&#x524D;&#x5229;&#x7387;&#x6307;&#x6570;&#x4E5F;&#x4F1A;&#x5168;&#x5C40;&#x5B58;&#x50A8;&#x3002;</p>
+<p>The balance of each account address in the money market is stored as an account checkpoint. The account checkpoint is a Solidity tuple &lt;uint256 borrows, uint256 interestIndex&gt;, which describes the interest rate index and the borrowing balance when the account was last updated. The current interest rate index of the money market is also stored globally.</p>
+<p>&#x6BCF;&#x6B21;&#x4EA4;&#x6613;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x8BE5;&#x8D44;&#x4EA7;&#x7684;&#x4F9B;&#x7ED9;&#x5229;&#x7387;&#x548C;&#x501F;&#x6B3E;&#x5229;&#x7387;&#x6307;&#x6570;&#x90FD;&#x4F1A;&#x88AB;&#x66F4;&#x65B0;&#x4E3A;&#x81EA;&#x4E0A;&#x4E00;&#x671F;&#x6307;&#x6570;&#x4EE5;&#x6765;&#x7684;&#x590D;&#x5229;&#xFF0C;&#x4F7F;&#x7528;&#x671F;&#x5185;&#x7684;&#x5229;&#x606F;&#xFF0C;&#x4EE5; r&#x2217;t&#x8BA1;&#x4EF7;&#xFF0C;&#x6309;&#x6BCF;&#x671F;&#x5229;&#x7387;&#x8BA1;&#x7B97;&#x3002;</p>
+<p>Each time a transaction is produced, the asset&apos;s supply interest rate and borrowing interest rate index will be updated to the compound interest from the previous period of the index.The interest is priced at r&#x2217;t during the period of use,and calculated at the interest rate of each period.</p>
+<p>Index(a,n)= Index(a,n-1)* (1+r*t)</p>
+<ol>
+<li><strong>&#x5E02;&#x573A;&#x6C47;&#x7387; Market Exchange Rate</strong></li>
+</ol>
+<p>&#x8D44;&#x4EA7;&#x5728;&#x8D27;&#x5E01;&#x5E02;&#x573A;a &#x4E2D;&#x6D41;&#x901A;&#xFF0C;&#x968F;&#x7740;&#x5E02;&#x573A;&#x501F;&#x8D37;&#x4F9B;&#x7ED9;&#x5173;&#x7CFB;&#x548C;&#x65F6;&#x95F4;&#x7684;&#x63A8;&#x79FB;&#xFF0C;fToken&#x6570;&#x91CF;&#x4F1A;&#x4E0D;&#x65AD;&#x589E;&#x957F;&#xFF0C;&#x6211;&#x4EEC;&#x6839;&#x636E;&#x5E02;&#x573A;&#x4F9B;&#x6C42;&#x5173;&#x7CFB;&#x8BBE;&#x5B9A; fToken &#x7684;&#x5151;&#x6362;&#x6C47;&#x7387;&#xFF0C;&#x4E5F;&#x5C31;&#x662F; fToken&#x7684;&#x5E02;&#x573A;&#x6C47;&#x7387;&#x3002;</p>
+<p>Assets circulate in the money market a, but the amount of fToken will continue to grow with market interest. We set the exchange rate of fToken according to market supply and demand, which is the market exchange rate of fToken as well.</p>
+<p>Exchange Ratea= (Casha +Borrwsa*0.9)/Supplya</p>
+<p>Exchange Rateb= (Cashb+Borrwsb*0.8)/Supplyb</p>
+<p>&#x5F53;&#x5B58;&#x6B3E;&#x4E0D;&#x53D8;&#xFF0C;&#x501F;&#x6B3E;&#x8D8A;&#x591A;&#x65F6;&#xFF0C;&#x5E02;&#x573A;&#x6C47;&#x7387;&#x8D8A;&#x9AD8;&#x3002;&#x5B58;&#x6B3E;&#x4EBA;&#x7684; fToken&#x4F59;&#x989D;&#x53EF;&#x5151;&#x6362;&#x66F4;&#x591A;&#x8D44;&#x4EA7;&#xFF0C;&#x591A;&#x5151;&#x6362;&#x7684;&#x90E8;&#x5206;&#x5219;&#x4E3A;&#x5B58;&#x6B3E;&#x5229;&#x606F;&#x3002;</p>
+<p>l&#x8FD9;&#x91CC;&#x7684;&#x5E38;&#x91CF; 0.9&#x662F;&#x7A33;&#x5B9A;&#x5E01;&#x4F5C;&#x4E3A;&#x5B58;&#x6B3E;&#x5229;&#x7387;&#x548C;&#x501F;&#x6B3E;&#x5229;&#x7387;&#x7684;&#x5229;&#x5DEE;&#x8BBE;&#x7F6E;&#x7684;&#xFF0C;&#x5373;&#x501F;&#x6B3E;&#x5229;&#x606F;&#x7684;10%&#x4F5C;&#x4E3A;&#x5229;&#x5DEE;&#x5F52;Flux&#x5E73;&#x53F0;&#x6240;&#x6709;&#x3002;</p>
+<p>ii&#x8FD9;&#x91CC;&#x7684;&#x5E38;&#x91CF; 0.8&#x662F;&#x975E;&#x7A33;&#x5B9A;&#x5E01;&#x4F5C;&#x4E3A;&#x5B58;&#x6B3E;&#x5229;&#x7387;&#x548C;&#x501F;&#x6B3E;&#x5229;&#x7387;&#x7684;&#x5229;&#x5DEE;&#x8BBE;&#x7F6E;&#x7684;&#xFF0C;&#x5373;&#x501F;&#x6B3E;&#x5229;&#x606F;&#x7684;20%&#x4F5C;&#x4E3A;&#x5229;&#x5DEE;&#x5F52;Flux&#x5E73;&#x53F0;&#x6240;&#x6709;</p>
+<p>More borrowing brings a higher market exchange rate when the deposit remains unchanged. The depositor&apos;s fToken balance can be exchanged for more assets, and the assets that are exchanged by the fToken balance are the deposit interest.The constant 0.9 is to express the difference between the supply interest and the borrow interest rate of non-stablecoins and that 10% of the borrowing interest is distributed to orz Protocol&#x2019;s team. The constant 0.8 is to express the difference between the supply interest and the borrow interest rate of stablecoins and that 20% of the borrowing interest is distributed to orz Protocol&#x2019;s team.</p>
+<p>cTokensa= fTokensa/ Exchange Ratea</p>
+<ol>
+<li><strong>&#x5B58;&#x6B3E;&#xFF08;&#x94F8;&#x5E01;&#xFF09;Deposit(Mintage)</strong></li>
+</ol>
+<p>&#x4EFB;&#x4F55; Conflux &#x8D26;&#x6237;&#x90FD;&#x53EF;&#x901A;&#x8FC7;&#x4F9B;&#x7ED9;&#x8D44;&#x4EA7;&#x83B7;&#x5F97;&#x65B0;&#x94F8;&#x9020;&#x7684; fToken&#xFF1B;&#x4F9B;&#x7ED9;&#x8D44;&#x4EA7;&#x5B58;&#x5165;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x5408;&#x7EA6;&#x540D;&#x4E0B;&#xFF0C;&#x5176;&#x65B0;&#x94F8;&#x9020;&#x7684; fToken &#x6570;&#x91CF;&#x7B49;&#x4E8E;&#x4F9B;&#x7ED9;&#x8D44;&#x4EA7;&#x6570;&#x91CF;&#x9664;&#x4EE5;&#x5F53;&#x524D;&#x5E02;&#x573A;&#x6C47;&#x7387;&#x3002;</p>
+<p>Any Conflux account can obtain newly minted fTokens by offering assets, and the assets are deposited under the name of the money market contract, and the number of newly minted fTokens is equal to the number of the deposited assets divided by the current market exchange rate.</p>
+<p>Flux &#x534F;&#x8BAE;&#x4E2D;&#x6709;&#x4E09;&#x5927;&#x7C7B;&#x8D44;&#x4EA7;&#xFF0C;&#x5404;&#x7C7B;&#x8D44;&#x4EA7;&#x7684;&#x4F9B;&#x7ED9;&#x9014;&#x5F84;&#x6709;&#x6240;&#x5DEE;&#x5DF2;&#xFF1A;</p>
+<p>There are three types of assets in the Fluxprotocol, and there are different ways of offering different assets::</p>
+<ol>
+<li>Conflux &#x5E73;&#x53F0;&#x5E01; CFX &#x4F9B;&#x7ED9;&#xFF1A;&#x901A;&#x8FC7;
+<em>function</em>
+mint
+()
+payable
+&#x51FD;&#x6570;&#x4F9B;&#x7ED9;&#x3002;</li>
+</ol>
+<p>1.Conflux token CFX: offering assetes through_function_mint()payablefunction</p>
+<ol>
+<li><p>&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;cToken&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x9014;&#x5F84;&#x63D0;&#x4F9B;&#xFF1A;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;<br>cToken.<br>operatorSend(minter,market,amount,0x0,<br>0x1)<br>&#x8F6C;&#x8D26;<br>&#x81F3;<br>&#x8D27;&#x5E01;&#x5E02;&#x573A;<br>&#x5408;&#x7EA6;<br>&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7; ShuttleFlow<br>&#x4FA7;&#x94FE;&#x7CFB;&#x7EDF;&#x5C06;&#x4EE5;&#x592A;&#x574A;&#x6216;&#x8005;&#x6BD4;&#x7279;&#x5E01;&#x94FE;&#x4E0A;&#x8D44;&#x4EA7;&#x8F6C;&#x8D26;&#x81F3;<br>&#x8D27;&#x5E01;&#x5E02;&#x573A;<br>&#x3002;<br>ShuttleFlow&#x5C06;&#x901A;&#x8FC7;<br>cToken.mint(market,amount<br>,<br>minger<br>,<br>&quot;&quot;<br>)<br>&#x94F8;&#x9020;&#x65B0;&#x7684; cToken &#x5230;&#x501F;&#x8D37;&#x5408;&#x7EA6;&#x3002;</p>
+</li>
+<li><p>Cross-chain assets cToken, two ways:</p>
+</li>
+<li><p>Transffering assets to the money market contract through<br>cToken.operatorSend(minter,market,amount,0x0,0x1)<br>.</p>
+</li>
+<li><p>Transferring assets on the Ethereum or Bitcoin chain to the money market through the ShuttleFlow side chain system.
+ShuttleFlow will use
+cToken.mint(market,amount,
+minger
+,
+&quot;&quot;
+)
+to mint new cTokens into the loan contract.</p>
+</li>
+<li><p>&#x975E;&#x8DE8;&#x94FE;ERC777&#x8D44;&#x4EA7;&#xFF1A;&#x901A;&#x8FC7;<br>cToken.operatorSend(minter,market,amount,0x0,0x1)<br>&#x8F6C;&#x8D26;<br>&#x81F3;<br>&#x8D27;&#x5E01;&#x5E02;&#x573A;<br>&#x5408;&#x7EA6;&#x3002;</p>
+</li>
+<li><p>non-cross-chain ERC777 assets: transffering assets to the money market contract throughcToken.operatorSend(minter,market,amount,0x0,0x1)</p>
+</li>
+</ol>
+<p>&#x5B58;&#x6B3E;&#x51FD;&#x6570;&#x4E2D;&#x5904;&#x7406;&#x7684;&#x5173;&#x952E;&#x52A8;&#x4F5C;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x94F8;&#x9020;&#x65B0; fToken &#x7ED9;minter&#xFF1B;</li>
+<li><p>&#x66F4;&#x65B0;minter&#x4F59;&#x989D;&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6A21;&#x578B;&#x3002;</p>
+</li>
+</ol>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x4F9B;&#x7ED9; ERC777 &#x8D44;&#x4EA7;&#x5230;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x7684;&#x52A8;&#x4F5C;&#x5E76;&#x4E0D;&#x5728;&#x5B58;&#x6B3E;&#x51FD;&#x6570;&#x4E2D;&#x6267;&#x884C;&#xFF0C;&#x800C;&#x662F;&#x7531;ERC777&#x8F6C;&#x8D26;&#x5230;&#x8D27;&#x5E01;&#x65F6;&#x7684;tokensReceived&#x56DE;&#x8C03;&#x6765;&#x89E6;&#x53D1;&#x5B58;&#x6B3E;&#x51FD;&#x6570;&#x3002;</p>
+<p>The key steps to process deposit function are:</p>
+<ol>
+<li>Minting new fToke to minter;</li>
+<li><p>Updating minter balance;</p>
+</li>
+<li><p>Updating interest rate model.</p>
+</li>
+<li><p><strong>&#x53D6;&#x6B3E;&#xFF08;&#x8D4E;&#x56DE;&#xFF09;Withdraw&#xFF08;Rede</strong>
+<strong>em</strong>
+<strong>&#xFF09;</strong></p>
+</li>
+</ol>
+<p>&#x8D4E;&#x56DE;&#x76F8;&#x5F53;&#x4E8E;&#x53D6;&#x6B3E;&#xFF0C;&#x4E00;&#x65E6;&#x8D4E;&#x56DE;&#x8D44;&#x4EA7;&#x5C06;&#x4E0D;&#x518D;&#x4EAB;&#x6709;&#x5229;&#x606F;&#x7B49;&#x6743;&#x76CA;&#x3002;&#x8D4E;&#x56DE;&#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x5C06;&#x8D44;&#x4EA7;&#x4ECE;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x8F6C;&#x79FB;&#x81F3;&#x7528;&#x6237;&#xFF0C;&#x4EE5;&#x4EA4;&#x6362;&#x4E4B;&#x524D;&#x94F8;&#x9020;&#x7684; fToken&#x3002;&#x8D44;&#x4EA7;&#x8D4E;&#x56DE;&#x6570;&#x91CF;&#x7B49;&#x4E8E;&#x8981;&#x8D4E;&#x56DE;&#x7684;fToken &#x6570;&#x91CF;&#x4E58;&#x4EE5;&#x5F53;&#x524D;&#x6C47;&#x7387;&#x5F97;&#x51FA;&#x3002;&#x8D4E;&#x56DE;&#x6570;&#x91CF;&#x5FC5;&#x987B;&#x5C0F;&#x4E8E;&#x7528;&#x6237;&#x8D26;&#x53F7;&#x7684;&#x53EF;&#x7528;&#x6D41;&#x52A8;&#x6027;&#x4EE5;&#x53CA;&#x5E02;&#x573A;&#x7684;&#x53EF;&#x7528;&#x6D41;&#x52A8;&#x6027;&#x3002;</p>
+<p>Redeemis similar to withdrawal and once the redemption takes place, rights like interest income are no longer entitled to the withdrawer.The redemption function is responsible for transferring assets from the money market to users in exchange for the previously minted fToken. The amount of assets redeemed is equal to the amount of fToken to be redeemed multiplied by the current exchange rate. The redemption amount must be smaller than the available liquidity of the user account and the available liquidity of the market.</p>
+<p>Flux &#x534F;&#x8BAE;&#x4E2D;&#x6709;&#x4E09;&#x5927;&#x7C7B;&#x8D44;&#x4EA7;&#xFF0C;&#x5404;&#x7C7B;&#x8D44;&#x4EA7;&#x63D0;&#x4F9B;&#x4E0D;&#x540C;&#x7684;&#x63A5;&#x6536;&#x8D44;&#x4EA7;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ol>
+<li>Conflux &#x5E73;&#x53F0;&#x5E01; CFX&#xFF1A;&#x901A;&#x8FC7;
+<em>function</em>
+redeem
+(
+uint256
+ftokens)
+&#x51FD;&#x6570;&#x8D4E;&#x56DE;&#x8D44;&#x4EA7;&#x5230;&#x81EA;&#x5DF1;&#x7684; Conflux &#x5730;&#x5740;&#x3002;</li>
+<li><p>&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;cToken&#xFF1A;&#x652F;&#x6301;&#x8D4E;&#x56DE;&#x5230;&#x4EE5;&#x592A;&#x574A;&#x5730;&#x5740;&#x6216;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#x3002;</p>
+</li>
+<li><p>&#x901A;<br>&#x8FC7;<br><em>function</em><br>redeem<br>(<br>uint256<br>ftokens<br>)<br> &#x51FD;&#x6570;&#xFF0C;<br>&#x4EE5;&#x8D4E;&#x56DE;&#x8D44;&#x4EA7;<br>&#x5230;<br>&#x81EA;&#x5DF1;&#x7684; Conflux &#x5730;&#x5740;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;<br><em>function</em><br>redeem<br>(<br>uint256<br>ftokens,<br>address<br>receiver) &#x51FD;&#x6570;&#xFF0C;receiver &#x8F93;&#x5165;&#x4EE5;&#x592A;&#x574A;&#x6216;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#xFF0C;&#x4EE5;<br>&#x8D4E;&#x56DE;&#x8D44;&#x4EA7;<br>&#x5230;<br>&#x4EE5;&#x592A;&#x574A;&#x6216;&#x6BD4;&#x7279;&#x5E01;&#x94B1;&#x5305;&#x4E2D;&#x3002;</p>
+</li>
+<li><p>&#x975E;&#x8DE8;&#x94FE;ERC777&#x8D44;&#x4EA7;&#xFF1A;&#x901A;&#x8FC7;<br><em>function</em><br>redeem<br>(<br>uint256<br>ftokens<br>)<br> &#x51FD;&#x6570;&#xFF0C;&#x4EE5;<br>&#x8D4E;&#x56DE;&#x8D44;&#x4EA7;<br>&#x5230;<br>&#x81EA;&#x5DF1;&#x7684; Conflux &#x94B1;&#x5305;&#x3002;</p>
+</li>
+</ol>
+<p>There are three types of assets in the Flux protocol, and there are diferent ways to receive different assets:</p>
+<ol>
+<li>Conflux token CFX: Redeem assets to your Conflux address through
+<em>function</em>
+redeem
+(
+uint256
+ftokens)
+function.</li>
+<li><p>Cross-chain cToken: Support redemption to Ethereum address or Bitcoin address</p>
+</li>
+<li><p>Redeem assets to your Conflux adress through<br><em>function</em><br>redeem<br>(<br>uint256<br>ftokens<br>)<br>function</p>
+</li>
+<li><p>Receiver shall enter their own ETH/BTC adress through
+<em>function</em>
+redeem
+(
+uint256
+ftokens,
+address
+receiver)
+function to redeem thier asstes back to their ETH/BTC wallet.</p>
+</li>
+</ol>
+<p>3.Non-cross-chain ERC777 asstes: Redeem asstes back to your won Conflux wallet through_function_redeem(uint256ftokens)function.</p>
+<p>&#x53D6;&#x6B3E;&#x51FD;&#x6570;&#x4E2D;&#x5904;&#x7406;&#x7684;&#x5173;&#x952E;&#x52A8;&#x4F5C;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x5212;&#x8F6C; ERC777 &#x8D44;&#x4EA7;&#x7ED9; msg.sender &#x6216; receiver&#xFF08;&#x7531;&#x7ECF;&#x8DE8;&#x94FE;&#x7CFB;&#x7EDF;&#xFF09;&#xFF1B;</li>
+<li><p>&#x9500;&#x6BC1; fToken&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0; msg.sender &#x4F59;&#x989D;&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6A21;&#x578B;&#x3002;</p>
+</li>
+</ol>
+<p>The key steps to process withdrawal functions are:</p>
+<ol>
+<li>Transferring ERC777 assets to msg.sender or receiver (through cross-chain system);</li>
+<li><p>Dispose fToken;</p>
+</li>
+<li><p>Updating msg.sender balance;</p>
+</li>
+<li><p>Updating interest rate model.</p>
+</li>
+<li><p><strong>&#x501F;&#x6B3E; Borrowing</strong></p>
+</li>
+</ol>
+<p>&#x501F;&#x6B3E;&#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x5C06;&#x8D44;&#x4EA7;&#x4ECE;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x8F6C;&#x79FB;&#x7ED9;&#x7528;&#x6237;&#xFF0C;&#x5E76;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x501F;&#x6B3E;&#x4F59;&#x989D;&#xFF0C;&#x8BE5;&#x4F59;&#x989D;&#x6839;&#x636E;&#x8D44;&#x4EA7;&#x7684;&#x501F;&#x6B3E;&#x5229;&#x7387;&#x590D;&#x5229;&#x8BA1;&#x606F;&#x3002;&#x501F;&#x6B3E;&#x6570;&#x91CF;&#x5FC5;&#x987B;&#x5C11;&#x4E8E;&#x7528;&#x6237;&#x7684;&#x501F;&#x6B3E;&#x80FD;&#x529B;&#x4EE5;&#x53CA;&#x5E02;&#x573A;&#x7684;&#x53EF;&#x7528;&#x6D41;&#x52A8;&#x6027;&#x3002;&#x7528;&#x6237;&#x5FC5;&#x987B;&#x7EF4;&#x6301;&#x62B5;&#x62BC;&#x8981;&#x6C42;&#x4EE5;&#x907F;&#x514D;&#x6E05;&#x7B97;&#x3002;</p>
+<p>The borrowing function is responsible for transferring the assets from the money market to the users, and creating a borrowing balance that is compounded based on the asset&apos;s borrowing rate. The amount of borrowing must be smaller than the user&#x2019;s borrowing capacity and the market&#x2019;s available liquidity. The user must maintain the mortgage requirement in order to avoid liquidation.</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x501F;&#x6B3E;&#x4EBA;&#x5C06;&#x6536;&#x5230;&#x4E00;&#x7B14;&#x8D44;&#x4EA7;&#x4EA4;&#x6613;&#xFF0C;&#x5BF9;&#x4E8E; fETH &#x8D27;&#x5E01;&#x5E02;&#x573A;&#x6765;&#x8BF4;&#x5C06;&#x662F;&#x4EE5;&#x592A;&#x5E01;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x501F;&#x6B3E;&#x4EBA;&#x5FC5;&#x987B;&#x662F;&#x53EF;&#x507F;&#x8FD8;&#x7684;&#x3002;</p>
+<p>Please be noted that the borrower will receive an asset transaction, which will be Ether for the fETH money market. Therefore, the borrower must be repayable.</p>
+<p>Flux &#x534F;&#x8BAE;&#x4E2D;&#x6709;&#x4E09;&#x5927;&#x7C7B;&#x8D44;&#x4EA7;&#xFF0C;&#x5404;&#x7C7B;&#x8D44;&#x4EA7;&#x63D0;&#x4F9B;&#x4E0D;&#x540C;&#x7684;&#x63A5;&#x6536;&#x8D44;&#x4EA7;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ol>
+<li>Conflux &#x5E73;&#x53F0;&#x5E01; CFX&#xFF1A;&#x901A;&#x8FC7;
+<em>function</em>
+borrow
+(
+uint256
+ctokens)
+&#x51FD;&#x6570;&#x501F;&#x5165;&#x8D44;&#x4EA7;&#x5230;&#x81EA;&#x5DF1;&#x7684; Conflux &#x5730;&#x5740;&#x3002;</li>
+<li><p>&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;cToken&#xFF1A;&#x652F;&#x6301;&#x8D4E;&#x56DE;&#x5230;&#x4EE5;&#x592A;&#x574A;&#x5730;&#x5740;&#x6216;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;<br><em>function</em><br>borrow<br>(<br>uint256<br>ctokens)<br>&#x51FD;&#x6570;&#xFF0C;<br>&#x501F;&#x5165;&#x8D44;&#x4EA7;&#x5230;&#x81EA;&#x5DF1;&#x7684; Conflux &#x5730;&#x5740;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;<br><em>function</em><br>borrow<br>(<br>uint256<br>ctokens,<br>address<br>receiver)<br>&#x51FD;&#x6570;&#xFF0C;receiver &#x8F93;&#x5165;&#x4EE5;&#x592A;&#x574A;&#x6216;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#xFF0C;&#x4EE5;&#x501F;&#x5165;&#x8D44;&#x4EA7;&#x5230;&#x4EE5;&#x592A;&#x574A;&#x6216;&#x6BD4;&#x7279;&#x5E01;&#x94B1;&#x5305;&#x4E2D;&#x3002;</p>
+</li>
+<li><p>&#x975E;&#x8DE8;&#x94FE;ERC777&#x8D44;&#x4EA7;&#xFF1A;&#x901A;&#x8FC7;<br><em>function</em><br>borrow<br>(<br>uint256<br>ctokens)<br>&#x51FD;&#x6570;&#xFF0C;&#x501F;&#x5165;&#x8D44;&#x4EA7;&#x5230;&#x81EA;&#x5DF1;&#x7684; Conflux &#x5730;&#x5740;&#x3002;</p>
+</li>
+</ol>
+<p>There are three types of assets in the Fluxprotocol, and different assets has different ways get received::</p>
+<ol>
+<li>Conflux token CFX: borrow assets to your Conflux address through
+<em>function</em>
+borrow
+(
+uint256
+ctokens)
+function.</li>
+<li><p>Cross-chain cToken:<br>Support redemption to Ethereum address or Bitcoin address.</p>
+</li>
+<li><p>Borrow assets to your Conflux adress through<br><em>function</em><br>redeem<br>(<br>uint256<br>ftokens<br>)<br>function</p>
+</li>
+<li><p>To borrow assets to the Ethereum or Bitcoin wallet<br>,the receiver need enter the Ethereum or Bitcoin address through<br><em>function</em><br>borrow<br>(<br>uint256<br>ctokens,<br>address<br>receiver)<br>function,</p>
+</li>
+<li><p>Non-cross-chain ERC777 asstes: borrow<br>asstes to your won Conflux wal let through function borrow(uint256 ctokens)function.</p>
+</li>
+</ol>
+<p>&#x501F;&#x6B3E;&#x51FD;&#x6570;&#x4E2D;&#x5904;&#x7406;&#x7684;&#x5173;&#x952E;&#x52A8;&#x4F5C;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x5212;&#x8F6C; ERC777 &#x8D44;&#x4EA7;&#x7ED9; msg.sender &#x6216; receiver&#xFF08;&#x7531;&#x7ECF;&#x8DE8;&#x94FE;&#x7CFB;&#x7EDF;&#xFF09;&#xFF1B;</li>
+<li><p>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6307;&#x6570;<br>&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0; msg.sender &#x501F;&#x6B3E;&#x4F59;&#x989D;&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6A21;&#x578B;&#x3002;</p>
+</li>
+</ol>
+<p>The key steps to process borrwoing functions are:</p>
+<ol>
+<li>Transferring ERC777 assets to msg.sender or receiver (through cross-chain system);</li>
+<li><p>Updating interest rate index;</p>
+</li>
+<li><p>Updating msg.sender bowrrowing balance;</p>
+</li>
+<li><p>Updating interest rate model.</p>
+</li>
+<li><p><strong>&#x507F;&#x8FD8;&#x501F;&#x6B3E;</strong>
+<strong>Borrow</strong>
+<strong>R</strong>
+<strong>epayment</strong></p>
+</li>
+</ol>
+<p>&#x501F;&#x6B3E;&#x4EBA;&#x901A;&#x8FC7;&#x8FD8;&#x6B3E;&#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x5C06;&#x501F;&#x5165;&#x7684;&#x8D44;&#x4EA7;&#x8F6C;&#x79FB;&#x5230;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#xFF0C;&#x4EE5;&#x51CF;&#x5C11;&#x7528;&#x6237;&#x7684;&#x501F;&#x6B3E;&#x4F59;&#x989D;&#x3002;&#x5F53;&#x501F;&#x6B3E;&#x4EBA;&#x507F;&#x8FD8;&#x7684;&#x8D44;&#x4EA7;&#x591A;&#x4F59;&#x5B9E;&#x9645;&#x501F;&#x6B3E;&#x65F6;&#xFF0C;&#x5269;&#x4F59;&#x90E8;&#x5206;&#x5C06;&#x88AB;&#x4F5C;&#x4E3A;&#x5B58;&#x6B3E;&#x8BB0;&#x5165;&#x8D26;&#x6237;&#x540D;&#x4E0B;&#x3002;</p>
+<p>The borrower transfers the borrowed assets to the money market through the repayment function,and in this way, the user&apos;s loan balance can be reduced. When the borrower&apos;s repayment of assets exceeds the actual assetes that has been borrowed, the excesses will be credited to the account as a deposit.</p>
+<p>Flux &#x534F;&#x8BAE;&#x4E2D;&#x6709;&#x4E09;&#x5927;&#x7C7B;&#x8D44;&#x4EA7;&#xFF0C;&#x5404;&#x7C7B;&#x8D44;&#x4EA7;&#x7684;&#x8FD8;&#x6B3E;&#x9014;&#x5F84;&#x4E0E;&#x4F9B;&#x7ED9;&#x8D44;&#x4EA7;&#x7C7B;&#x4F3C;&#xFF1A;</p>
+<p>There are three types of assets in the Fluxprotocol, and the way to repay the asstes is similar to the way of offerring assetes::</p>
+<ol>
+<li>Conflux &#x5E73;&#x53F0;&#x5E01; CFX&#xFF1A;&#x901A;&#x8FC7;
+<em>function</em>
+repay
+()
+payable
+&#x51FD;&#x6570;&#x8FD8;&#x6B3E;&#x3002;</li>
+<li><p>Conflux token CFX: Repay the debt through<br><em>function</em><br>repay<br>()<br>payable<br>function.</p>
+</li>
+<li><p>&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;cToken&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x9014;&#x5F84;&#x63D0;&#x4F9B;&#xFF1A;</p>
+</li>
+<li><p>Cross-chain cToken, two ways:</p>
+</li>
+<li><p>&#x901A;&#x8FC7;<br>cToken.operatorSend(<br>borrower,market,amount,0x0,0x0)<br>&#x8F6C;&#x8D26;<br>&#x81F3;<br>&#x8D27;&#x5E01;&#x5E02;&#x573A;<br>&#x5408;&#x7EA6;&#xFF0C;&#x9ED8;&#x8BA4;&#x89C6;&#x4E3A;&#x8FD8;&#x6B3E;&#x3002;</p>
+</li>
+<li><p>Repay assets to the money market contract, regarding it as repayment by default, through:<br>cToken.operatorSend(borrower,market,amount,0x0,0x0)</p>
+</li>
+</ol>
+<p>b)&#x901A;&#x8FC7; ShuttleFlow&#x4FA7;&#x94FE;&#x7CFB;&#x7EDF;&#x5C06;&#x4EE5;&#x592A;&#x574A;&#x6216;&#x8005;&#x6BD4;&#x7279;&#x5E01;&#x94FE;&#x4E0A;&#x8D44;&#x4EA7;&#x8F6C;&#x8D26;&#x81F3;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x3002;ShuttleFlow&#x5C06;&#x901A;&#x8FC7;cToken.mint(market,amount,borrower,&quot;&quot;)&#x94F8;&#x9020;&#x65B0;&#x7684; cToken &#x5230;&#x501F;&#x8D37;&#x5408;&#x7EA6;&#xFF0C;&#x9ED8;&#x8BA4;&#x89C6;&#x4E3A;&#x8FD8;&#x6B3E;&#x3002;</p>
+<p>b) Repayassets from the Ethereum or Bitcoin network to the money market through the ShuttleFlow. ShuttleFlow mints new cTokens into the borrowing smart contract, regarding it as repayment by default, through:cToken.mint(market,amount,borrower, &quot;&quot;)</p>
+<ol>
+<li>&#x975E;&#x8DE8;&#x94FE;ERC777&#x8D44;&#x4EA7;&#xFF1A;&#x901A;&#x8FC7;
+cToken.operatorSend(borrower,market,amount,0x0,0x0)
+&#x8F6C;&#x8D26;&#x81F3;
+&#x8D27;&#x5E01;&#x5E02;&#x573A;
+&#x5408;&#x7EA6;&#x3002;</li>
+<li>Non-cross-chain ERC777 assets: transferring assetes to money market contracts through
+cToken.operatorSend(borrower
+,market,amount,0x0,0x0)
+.</li>
+</ol>
+<p>&#x8FD8;&#x6B3E;&#x51FD;&#x6570;&#x4E2D;&#x5904;&#x7406;&#x7684;&#x5173;&#x952E;&#x52A8;&#x4F5C;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6307;&#x6570;&#xFF1B;</li>
+<li><p>&#x66F4;&#x65B0; borrower &#x6216;msg.sender<br>&#x501F;&#x6B3E;&#x4F59;&#x989D;&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0; borrower &#x6216;msg.sender &#x8D26;&#x6237;&#x4F59;&#x989D;&#xFF08;&#x53EF;&#x80FD;&#xFF09;&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6A21;&#x578B;&#x3002;</p>
+</li>
+</ol>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x507F;&#x8FD8; ERC777 &#x8D44;&#x4EA7;&#x5230;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x7684;&#x52A8;&#x4F5C;&#x5E76;&#x4E0D;&#x5728;&#x8FD8;&#x6B3E;&#x51FD;&#x6570;&#x4E2D;&#x6267;&#x884C;&#xFF0C;&#x800C;&#x662F;&#x7531;ERC777&#x8F6C;&#x8D26;&#x5230;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x5730;&#x5740;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x7684;tokensReceived&#x56DE;&#x8C03;&#x6765;&#x89E6;&#x53D1;&#x7684;&#x8FD8;&#x6B3E;&#x51FD;&#x6570;&#x3002;</p>
+<p>The key steps to process repayment functions are:</p>
+<ol>
+<li>Updating interest rate index;</li>
+<li><p>Updating borrower or msg.sender borrowing balance;</p>
+</li>
+<li><p>Updating<br>borrower or msg.sender balance(possibly);</p>
+</li>
+<li><p>Updating interest rate model.</p>
+</li>
+</ol>
+<p>Please be notedthe action of repaying ERC777 assets to the money market is not executed in therepayment function, but when ERC777 is transferred to the token, thetokensReceivedwill trigger the repayment function.</p>
+<ol>
+<li><strong>&#x6E05;&#x7B97;&#x501F;&#x6B3E;</strong>
+<strong>Borrowing Liquidation</strong></li>
+</ol>
+<p>&#x6E05;&#x7B97;&#x4EBA;&#x65E0;&#x963B;&#x529B;&#x8FDB;&#x884C;&#x6E05;&#x7B97;&#x3002;&#x8C03;&#x7528;Flux&#x5B88;&#x536B;&#x5408;&#x7EA6;Guard&#x5373;&#x53EF;&#x8FDB;&#x884C;&#x6E05;&#x7B97;&#x3002;&#x4F46;&#x5728;&#x6E05;&#x7B97;&#x524D;&#x9700;&#x6388;&#x6743; Guard &#x5C06;&#x5F85;&#x507F;&#x8FD8;&#x7684;&#x501F;&#x6B3E;&#x4ECE;&#x6E05;&#x7B97;&#x4EBA;&#x8D26;&#x6237;&#x4E2D;&#x8F6C;&#x8D26;&#x81F3;&#x501F;&#x8D37;&#x6D41;&#x52A8;&#x6027;&#x6C60;&#x4E2D;&#x3002;</p>
+<p>The liquidator repays all or part of the borrowing for the borrower, so that the liquidity of the borrower&apos;s account is restored. When multiple liquidators participate in the liquidation, they will be liquidated in order according to time priority.</p>
+<p>&#x6E05;&#x7B97;&#x51FD;&#x6570;&#xFF1A;</p>
+<p>functionliquidate(address borrower)external</p>
+<p>&#x6E05;&#x7B97;&#x51FD;&#x6570;&#x4E2D;&#x5904;&#x7406;&#x7684;&#x5173;&#x952E;&#x52A8;&#x4F5C;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x68C0;
+&#x67E5;
+&#x501F;
+&#x6B3E;
+&#x4EBA;
+&#x8D26;
+&#x6237;
+&#x62B5;&#x62BC;
+&#x662F;&#x5426;
+&#x4F4E;
+&#x4E8E;
+&#x6E05;&#x7B97;
+&#x62B5;
+&#x62BC;&#x7387;&#x3002;</li>
+<li><p>&#x507F;<br>&#x8FD8;<br>&#x501F;<br>&#x6B3E;<br>&#x5230;<br>&#x501F;<br>&#x8D37;<br>&#x6D41;&#x52A8;<br>&#x6C60;<br>&#x4E2D;<br>&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0;<br>borrower&#x501F;&#x6B3E;&#x4F59;&#x989D;&#xFF1B;</p>
+</li>
+<li><p>sender &#x83B7;&#x5F97;borrower &#x7684;&#x62B5;&#x62BC;&#x8D44;&#x4EA7;
+f
+t
+o
+k
+e
+n
+&#xFF1B;</p>
+</li>
+<li>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6A21;&#x578B;&#x3002;</li>
+</ol>
+<p>Liquidation function:</p>
+<p>functionliquidate(address borrower)external</p>
+<p>The key steps to process liquidation functions are:</p>
+<ol>
+<li>Check whether the borrower&#x2019;s collateral rate is lower than the liquidation collateral rate</li>
+</ol>
+<p>2.Repay outstanding borrowings into the money market12</p>
+<p>3.Update borrower&apos;s borrowing outstanding</p>
+<ol>
+<li>sender will receive the borrower&#x2019;s collateral ftoken assets</li>
+<li>Update interest rate mod</li>
+</ol>
+<h1 id="gornl"><strong>Token economics&#x4EE3;&#x5E01;&#x7ECF;&#x6D4E;&#x6A21;&#x578B;</strong> </h1>
+<p>Flux &#x534F;&#x8BAE;&#x7684;&#x5E73;&#x53F0;&#x4EE3;&#x5E01; $FLUX &#x662F;&#x57FA;&#x4E8E;&#x793E;&#x533A;&#x7BA1;&#x7406;&#x7684;DAO&#x4EE3;&#x5E01;&#x3002;&#x4E3A;&#x7EAA;&#x5FF5;&#x4E2D;&#x672C;&#x806A;&#xFF0C;&#x6700;&#x5927;&#x4EE3;&#x5E01;&#x4F9B;&#x7ED9;&#x88AB;&#x8BBE;&#x5B9A;&#x4E3A;&#x4E8C;&#x5343;&#x4E00;&#x767E;&#x4E07;&#x4E2A;$FLUX&#x3002;&#x6240;&#x6709;&#x7684;&#x4EE3;&#x5E01;&#x5C06;&#x5728;&#x672A;&#x6765;&#x56DB;&#x5E74;&#x5185;&#xFF0C;&#x901A;&#x8FC7;&#x5BF9;&#x63A5;&#x5E73;&#x53F0;&#x548C;Flux&#x56E2;&#x961F;&#x53D1;&#x653E;&#x7ED9;&#x793E;&#x533A;&#x53C2;&#x4E0E;&#x8005;&#x3002;&#x5176;&#x4E2D;&#xFF0C;75%&#x7684;$FLUX&#x5C06;&#x53D1;&#x653E;&#x7ED9;&#x793E;&#x533A;&#x53C2;&#x4E0E;&#x8005;&#xFF0C;10%&#x7684;$FLUX&#x5C06;&#x53D1;&#x653E;&#x7ED9;Flux &#x534F;&#x8BAE;&#x56E2;&#x961F;&#xFF0C;15%&#x7684;$FLUX&#x5C06;&#x53D1;&#x653E;&#x7ED9;Flux&#x793E;&#x533A;&#x57FA;&#x91D1; &#xFF08;1%&#x5C06;&#x4FDD;&#x7559;&#x7ED9;&#x65E9;&#x671F;&#x793E;&#x533A;&#x5FD7;&#x613F;&#x8005;&#xFF0C;14%&#x5C06;&#x7528;&#x4E8E;&#x793E;&#x533A;&#x53D1;&#x5C55;&#x4EE5;&#x53CA;Flux&#x6D41;&#x52A8;&#x6027;&#x50A8;&#x5907;&#xFF09;</p>
+<p>$FLUX&#x7684;&#x53D1;&#x884C;&#x65F6;&#x95F4;&#x8F74;&#x5C06;&#x5448;&#x7EBF;&#x72B6;&#xFF0C;&#x5373;&#x6BCF;&#x65E5;&#x51CF;&#x5C11;16&#x4E2A;$FLUX&#xFF0C;&#x800C;26,055.56164&#x4E2A;$FLUX&#x5C06;&#x5728;&#x4E0A;&#x7EBF;&#x540E;&#x7B2C;&#x4E00;&#x5929;&#x9646;&#x7EED;&#x53D1;&#x884C;&#x3002;&#x4E0B;&#x8868;&#x5C06;&#x5C55;&#x73B0;$FLUX&#x672A;&#x6765;&#x56DB;&#x5E74;&#x7684;&#x6BCF;&#x65E5;&#x53D1;&#x653E;&#x8BA1;&#x5212;&#xFF1A;</p>
+<p>Flux Protocol&#x2019;s platform token $FLUX is a DAO token for the community governance of the platform. In honor of Satoshi Nakamoto, the maximum supply is capped at 21 million $FLUX. All tokens will be release to the community through platform engagement and the Flux team over a period of 4 years. 75% of all $ FLUX will be release to the community, 10% to the Flux Protocol Team, and 15% to the Flux Community Fund (1% are reserved early community volunteers, and 14% for the community development and the Flux Liquidation Reserve)</p>
+<p>The release schedule of $FLUX is linear with a daily decrease of 16 $FLUX. 26,055.56164 $Flux tokens will be gradually released on day 1. The following figure displays the daily release of $FLUX over 4 years:</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615821596356-c0140a2e-d225-4d5e-9541-81a1b4362bc9.png" alt=""></p>
+<p>The following figure displays the $FLUX supply over 4 years:</p>
+<p>&#x4E0B;&#x8868;&#x5C55;&#x793A;&#x4E86;$FLUX&#x672A;&#x6765;&#x56DB;&#x5E74;&#x7684;&#x4F9B;&#x7ED9;</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615821609596-b7f3bc6a-059d-4cae-959f-2c629edf1e58.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chapter1.html" class="navigation navigation-prev " aria-label="Previous page: 中文">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ying-wen.html" class="navigation navigation-next " aria-label="Next page: En">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"一. 白皮书","level":"1.2.1","depth":2,"next":{"title":"En","level":"1.3","depth":1,"path":"ying-wen.md","ref":"ying-wen.md","articles":[{"title":"一. White Paper","level":"1.3.1","depth":2,"path":"ying-wen/4e00-white-paper.md","ref":"ying-wen/4e00-white-paper.md","articles":[]}]},"previous":{"title":"中文","level":"1.2","depth":1,"path":"chapter1.md","ref":"chapter1.md","articles":[{"title":"一. 白皮书","level":"1.2.1","depth":2,"path":"chapter1/4e00-he-yue-di-zhi.md","ref":"chapter1/4e00-he-yue-di-zhi.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/4e00-he-yue-di-zhi.md","mtime":"2021-08-19T09:00:41.083Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-19T09:04:17.163Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

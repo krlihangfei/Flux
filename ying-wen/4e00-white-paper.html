@@ -1,0 +1,783 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>一. White Paper · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../ying-wen.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1.html">
+            
+                <a href="../chapter1.html">
+            
+                    
+                    中文
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/4e00-he-yue-di-zhi.html">
+            
+                <a href="../chapter1/4e00-he-yue-di-zhi.html">
+            
+                    
+                    一. 白皮书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ying-wen.html">
+            
+                <a href="../ying-wen.html">
+            
+                    
+                    En
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="4e00-white-paper.html">
+            
+                <a href="4e00-white-paper.html">
+            
+                    
+                    一. White Paper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >一. White Paper</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="article-title">&#x3010;&#x4EA7;&#x54C1;-&#x767D;&#x76AE;&#x4E66;&#x3011;Flux&#x767D;&#x76AE;&#x4E66;v2.1 </h1>
+<p>Flux protocol White Paper</p>
+<p><strong>Edition 2.1</strong></p>
+<p>2021&#x5E74;03&#x6708;08&#x65E5;</p>
+<p><strong>Author</strong></p>
+<p><strong>PengHan</strong><a href="http://01.finance/" target="_blank"><strong>http://01.finance/</strong></a></p>
+<p><strong>Abstract</strong></p>
+<p>Flux Protocol, empowered by Conflux Network, provides a lending mechanism to adjust the interest rates of crypto assets in an automatic and decentralized fashion, incentivizing liquidity in the cryptocurrency market.</p>
+<ol>
+<li><strong> Introduction</strong></li>
+</ol>
+<p>DeFi, short for Decentralized Finance, is one of the most popular blockchain concepts. At 01, we think that as an integral part of financial systems,the bottom line for any DeFi product is to achieve the same level of security, stability, and trust-effectiveness as classic financial services; on top of that, building an autonomous, trustless, and inclusive system is always the stretch goal. On the other hand, DeFi products at its status quo still suffer from issues ranging from attacks both at protocol and infrastructure level to limited options on collateral assets, below-average user experience, and underperforming infrastructure. Therefore, DeFi is still largely embraced by exclusive circles of asset owners.</p>
+<p>Taking the Black Swan incident on 2020.03.12 as an example when bad things came in threes. Almost all cryptocurrencies experienced plunges in a short period of time, which led to a significant number of liquidated assets on DeFi lending platforms, such a MakerDao or Compound. One triggers the other, the Ethereum network was congested with pending transactions. Borrowers could not repay the outstanding borrowing in time, resulting in collateral loss; liquidators could not obtain assets in time for auctions through transfers. As a result, huge numbers of unwanted assets were taken away by liquidators and liquidation robots at extremely low prices, as low as 0 DAI (~ $0). Instead of repaying the borrower&#x2019;s collateral value and rebalancing the protocol, borrowers and lending platforms had to endure the massive loss.</p>
+<p>After witnessing the losses of the borrowers and the platform, we are determined to develop a new lending platform with more generalized asset templates and better collateralization models that could withstand future market meltdowns. The initial proposal has gained further support from the technical community of Conflux Network: with ETH 2.0 still in embryo, Conflux Network runs as if the V8 engines of Flux, drastically improving the efficiency of the interest rate model, liquidation logic, and more features of current DeFi lending products. With the improvements just mentioned, we reveal the Flux Protocol.</p>
+<ol>
+<li><strong>Flux Protooal</strong></li>
+</ol>
+<p>Flux is a compelte decentralized lending protocol, and anyone can adapt and develope a varitey of lending appications based on this protocol.</p>
+<p>a.  Assets and Cryptocurrencies</p>
+<p>Flux Protocol supports various digital assets. Besides supportingConflux Network&#x2019;s native token CFX, the protocol supports assets following the ERC-777 standard.</p>
+<p>us various digital assets. Besides supportingConflux Network&#x2019;s native token CFX, the protocol supports assets following the ERC-777 standard.</p>
+<p>Flux Protocol aggregates the assets of all users, forming an aggregated digital asset market -money market. Similar to the Compound protocol, once a user supplies the protocol with their assets, these assets become fungible. Liquidity providers (Lenders) can withdraw their supplied assets at any given time and do not need to waitfor their specific loan matures.</p>
+<p>The asset balance ofmoney marketaccrues interest based on the specific supply rate of the asset. Users are free to view their balance at any time (accrued interest - interest receivable and interest payable); when users update their balances through a transaction (supply, transfer or withdrawl of assets) the accured interest is tranfered to the user.</p>
+<p>Individual users that hold their assets as a long-term investment, such as CFX or other available digital assets,can supply these assets to themoney marketas an additional source of return on their investment. For example, users owning CFX can supply their tokens to themoney market, and earn interest (denominated in CFX) without having to manage their assets, fulfill loan requests or take speculative risks..</p>
+<ol>
+<li>Borrowing Assets</li>
+</ol>
+<p>Flux allows users to borrow assets by depositing a trusted collateral. Users have all rights of the borrowed assets, and can freely use these assets anywhere they can be used. Users don&#x2019;t need to negotiate maturity dates, interest rates, etc. User only need to specify the asset they want to borrow. In addition, if the assets are cross-chain assets, they can be cross-chained into other blockchain protocols, such as Ethereum or Bitcoin, through <strong>ShuttleFlow- A Cross-Chain Asset Protocol</strong>onConflux Network.</p>
+<p>Similar to the types of asset supply, everymoney marketthas a floating interest rate, determined by the market forces, which set the borrowing cost for each asset(Borrowing Interest Rate).</p>
+<p>In order to mitigate market risks, Flux sets the collateral factor of various asset types according to their Asset Risk Level, as displayed in Table 1. Assets cannot be over-collateralized. By combining asset price, balance, and collateral factor, the<strong>borrowing capacity</strong>is dynamically calculated for each account; each account can only borrow assets within its borrowing capacity.Collateral cannot be withdrawn, as long as the borrow is ongoing; however,even if user assets are used as collateral, the users will receive deposit interest.</p>
+<p>At the same time, an account&#x2019;s borrowing capacity cannot exceed the balance value of that specific account, which is called the<strong>collateral rate</strong>. The collateral rate is determined by the users ratio between asset supply (lending) and asset borrow. When the user&#x2019;s collateral rate drops below a certain threshold, the<strong>liquidation collateral rate</strong>, liquidation occurs; in order to increase the collateral rateto avoid liquidation,users can repay their borrowed assets partially or completely, and/or supply more assets into the money market.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Asset Risk Level</th>
+<th style="text-align:left">Collateral Factor</th>
+<th style="text-align:left">Assets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Stable Coin</td>
+<td style="text-align:left">130%</td>
+<td style="text-align:left">USDT, USDC, GUS, DAI, etc.Tokens with high market caps, high amounts of tokens distribution with top market acceptance, tranding depth and trading volume CoinMarketCap &gt; 50 mio.$</td>
+</tr>
+<tr>
+<td style="text-align:left">Low Risk</td>
+<td style="text-align:left">140%</td>
+<td style="text-align:left">BTC,ETH andOKB, HT, BNB platform tokens</td>
+</tr>
+<tr>
+<td style="text-align:left">Medium Risk</td>
+<td style="text-align:left">150%</td>
+<td style="text-align:left">XRP, BCH, BSV,LTC, EOS, AD, etc.Tokens with Top 10 Market Caps</td>
+</tr>
+<tr>
+<td style="text-align:left">High Risk</td>
+<td style="text-align:left">160%</td>
+<td style="text-align:left">Tokens other than listed above</td>
+</tr>
+</tbody>
+</table>
+<p>Table1- Collateral Factor of Asset Types</p>
+<ol>
+<li>Risk &amp; Liquidation</li>
+</ol>
+<p>To reduce Flux Protocol&#x2019;s risks and protect the liquidity suppliers (lenders), when the collateral rate of an account becomes negative, the account&#x2019;s supplied (lending) assets will be liquidated by other users of the protocol in order to repay the borrowing outstanding to maintain the protocols requirement of over-collateralization. When the liquidation process occurs, the liquidation account&#x2019;s collateral becomes an exchangeable asset at the current market price. Anybody (liquidator) can repay the borrowing outstanding of the borrower account in exchange for the borrow account&#x2019;s collateral as liquidation reward.</p>
+<p>Flux protocol expresses the collateral need as liquidation collateral rate, which is a fixed value and currently set at 110%. When an account&#x2019;s<strong>borrow collateral rate</strong>is lower than the liquidation collateral rate, the liquidity value of an account becomes negative. In this case thevalue of an account&#x2019;s borrowing outstanding exceeds their borrowing capacity.</p>
+<p>Any Conflux Network address can participate in the liquidation process without any pressure and reliance on a centralized system.On a first-in-time basis, the liquidator can invoke the liquidation account&#x2019;s outstanding borrowing.</p>
+<p>When an account&#x2019;s borrow collateral rate is far lower than the liquidation collateral rate, falling below 102%, the account will be placed into a<strong>margin call</strong>. When an account is place into a margin call, Flux Protocol&#x2019;s designated liquidator will process the liquidation for the liquidation account. Liquidations due to a margin call result in losses, therefore, the liquidators (user participating in liquidations) must pay a 6% fee into a liquidation smart contract, which is the Flux Liquidation Reserve. The Flux Liquidation Reserve will be utilized for margin calls.</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615383685985-431a620d-0171-4ca6-8254-c57c76728ac3.png" alt=""></p>
+<ol>
+<li>Withdrawal Limitation</li>
+</ol>
+<p>To prevent liquidation risks that are caused by borrowers withdrawing their assets, Flux Protocol requires the collateral rate to be above 120% after borrowers withdraw their assets, unless the borrowers pays off the outstanding borrowings (loans).</p>
+<ol>
+<li>Interest Rate Model</li>
+</ol>
+<p>Ua =Borrowsa/(Borrowsa+Casha)</p>
+<p>In the money marketof each individual asset, Flux Protocol balances theinterest rateautomatically based on the assets supply relationship (funding utilization rate).The suppliers and borrowers donot need to negotiate terms and interest rates individually since the Flux Protocol has an interest rate model implemented. Eachmoney markethas independent interest rates. The utilization rate_U_for eachmoney markett_a_unifies the asset supply and demand relationship into one variable:</p>
+<p>Ua =Borrowsa/(Borrowsa+Casha)</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615383685963-973a538e-ec5f-49ff-82b1-a40aaa45707d.png" alt=""></p>
+<p><em><strong>Borrowsa</strong>_represents the outstanding loan balance in the money market_a</em>;<em><strong>Casha</strong>_represents the balance of assets supplied to the money market</em><strong>a</strong><em>. Subjecting to economic principles, when borrowing demand is low, interest rates should be low; on the contrary, when borrowing demand is high, interest rates should rise. The borrowing demand is expressed by the utilization rate function. The current set borrowing interest rate (</em><strong>Borrow Interest Rate a</strong>_) is obtained from the utilization rate and a base interest rate of 0.005&#xFF1A;</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615383685969-85e68cfd-92a0-480c-9621-dfbd90155b3b.png" alt=""></p>
+<p>Within onemoney marketa, there is the following interest rate equilibrium:</p>
+<p>Borrowsa *Borrowing Interrest Ratea= Suppliesa *90%*Supply Interest Ratea</p>
+<p>Borrowsb *Borrowing Interrest Rateb= Suppliesb *80%*Supply Interest Rateb</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615383686011-26218960-1d84-4ed7-9c28-d987df2091c7.png" alt=""></p>
+<p>The figure below shows the interest rate change influenced by the utilization rate, where the fund utilization rate is 0, the borrowing rate is 0.005 and the deposit rate is 0&#xFF1A;</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615383685999-dc4e8203-3307-4601-87b2-8ac1fa62cacb.png" alt=""></p>
+<p><strong>Decentralized Autonmous Organizationy</strong></p>
+<p>The Flux protooal requires that any modification to theprotocolmust be voted through the Decentralized Autonomous Organization (DAO) to take effect. This is to decentralize the Fluxprotocol. In the early stages of Flux Protocol, the Flux Development Team will manage the DAO internally. After the Flux Protocol is complete and stable, the Flux Development Team will transfer the management authority of Flux to the DAO community.</p>
+<ol>
+<li>Implement &amp; structure</li>
+</ol>
+<p>Flux Protocol is written in Solidity, and all Conflux Network accounts can interact with the platform. Flux Protocol provides various interfaces to various market participants such as borrowers, depositors, and liquidators, etc..</p>
+<ol>
+<li>Conflux &#x4E3B;&#x7F51;&#x6027;&#x80FD;&#x8F83;&#x4E4B;&#x4E8E; Ethereum &#x66F4;&#x9AD8;&#xFF0C;Gas &#x8D39;&#x66F4;&#x4F4E;
+&#xFF1B;</li>
+<li><p>&#x6D41;&#x52A8;&#x6027;&#x66F4;&#x597D;&#xFF0C;&#x4F8B;&#x5982; wBTC&#x3001;imBTC &#x7B49;&#x90FD;&#x4EE5; fBTC &#x65B9;&#x5F0F;&#x5B58;&#x50A8;/&#x62B5;&#x62BC;&#xFF0C;&#x5171;&#x4EAB;&#x6D41;&#x52A8;&#x6027;&#xFF1B;</p>
+</li>
+<li><p>&#x5B89;&#x5168;&#x6027;&#x66F4;&#x9AD8;&#xFF0C;&#x8BE6;&#x7EC6;&#x8BF7;&#x89C1; 2.3.3&#x3002;</p>
+</li>
+<li><p>The performance of ConfluxNetworkt is higher<br>and the transaction fees lower thann Ethereum.</p>
+</li>
+<li><p>Conflux has aimproved<br>r liquidit.,Ffor example, wBTC, imBTC and alik<br> aresuppliedd<br>collateralized<br> via fBTC andenjoy<br> sharde liquidity<br>through this methody.</p>
+</li>
+<li><p>Conflux has a higher security, please refer to 2.3.3.</p>
+</li>
+<li><p>money market</p>
+</li>
+</ol>
+<p>The Flux protocol opens up an independent money market for each asset, it is also known as the lending market. We define the assets in the Flux protocol as standard ERC20 Token: fToken. The borrowers transfer assets to the contract, and their assets can be converted into fToken; over time, the borrowers can gain fToken interest returns. Table 2 is a list of the first batch of assets launched by Flux and the corresponding fToken information.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x8D44;&#x4EA7;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th style="text-align:left">ctoken&#xFF08;ERC777&#xFF09;</th>
+<th style="text-align:left">ftoken&#xFF08;ERC20&#xFF09;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">BTC</td>
+<td style="text-align:left">&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;</td>
+<td style="text-align:left">cBTC</td>
+<td style="text-align:left">fBTC</td>
+</tr>
+<tr>
+<td style="text-align:left">ETH</td>
+<td style="text-align:left">&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;</td>
+<td style="text-align:left">cETH</td>
+<td style="text-align:left">fETH</td>
+</tr>
+<tr>
+<td style="text-align:left">USDT</td>
+<td style="text-align:left">&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;</td>
+<td style="text-align:left">cUSDT</td>
+<td style="text-align:left">fUSDT</td>
+</tr>
+<tr>
+<td style="text-align:left">DAI</td>
+<td style="text-align:left">&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;</td>
+<td style="text-align:left">cDAI</td>
+<td style="text-align:left">fDAI</td>
+</tr>
+<tr>
+<td style="text-align:left">CFX</td>
+<td style="text-align:left">&#x5E73;&#x53F0;&#x5E01;</td>
+<td style="text-align:left">&#x65E0;</td>
+<td style="text-align:left">fCFX</td>
+</tr>
+</tbody>
+</table>
+<p>&#x8868;2-Flux&#x9996;&#x6279;&#x501F;&#x8D37;&#x8D44;&#x4EA7;</p>
+<p>table-2 fist Flux lending assets</p>
+<ol>
+<li><strong>&#x5229;&#x7387; Interest Rate</strong></li>
+</ol>
+<p>&#x548C; Compound &#x76F8;&#x540C;&#xFF0C;Flux&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x662F;&#x7531;&#x4E00;&#x5BF9;&#x73B0;&#x884C;&#x5229;&#x7387;&#xFF08;&#x4F9B;&#x7ED9;&#x548C;&#x501F;&#x6B3E;&#x5229;&#x7387;&#xFF09;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x7EDF;&#x4E00;&#x9002;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x7528;&#x6237;&#xFF0C;&#x968F;&#x7740;&#x65F6;&#x95F4;&#x7684;&#x63A8;&#x79FB;&#xFF0C;&#x8FD9;&#x5BF9;&#x5229;&#x7387;&#x4F1A;&#x968F;&#x7740;&#x4F9B;&#x6C42;&#x5173;&#x7CFB;&#x7684;&#x53D8;&#x5316;&#x800C;&#x8C03;&#x6574;&#x3002;</p>
+<p>Like Compound, the Flux money market is defined by a pair of current interest rates (supply and borrowing rates), which are applicable to all users. With passage of time, this pair of interest rates will be adjusted once changes in supply and demand take place.</p>
+<p>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x6765;&#x8BF4;&#xFF0C;&#x6BCF;&#x6B21;&#x5229;&#x7387;&#x7684;&#x53D8;&#x5316;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x5229;&#x7387;&#x6307;&#x6570;&#xFF08;Interest Rate Index&#xFF09;&#x6765;&#x638C;&#x63E1;&#x7684;&#x3002;&#x6BCF;&#x6B21;&#x5229;&#x7387;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x90FD;&#x662F;&#x7531;&#x7528;&#x6237;&#x4F9B;&#x7ED9;&#x3001;&#x53D6;&#x6B3E;&#x3001;&#x501F;&#x6B3E;&#x3001;&#x507F;&#x8FD8;&#x6216;&#x6E05;&#x7B97;&#x8D44;&#x4EA7;&#x6240;&#x4EA7;&#x751F;&#x3002;&#x7528;&#x6237;&#x4F59;&#x989D;&#x5305;&#x62EC;&#x5E94;&#x8BB0;&#x5229;&#x606F;&#xFF0C;&#x7B80;&#x5355;&#x5730;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;&#x5F53;&#x524D;&#x5229;&#x7387;&#x6307;&#x6570;&#x9664;&#x4EE5;&#x7528;&#x6237;&#x4F59;&#x989D;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x66F4;&#x65B0;&#x65F6;&#x7684;&#x5229;&#x7387;&#x6307;&#x6570;&#x4E4B;&#x6BD4;&#x3002;</p>
+<p>For every monetary market, every change in interest rates is controlled by the Interest Rate Index. The change of the interest rate is a result of user actions like supply, withdrawal, borrowing, repayment or liquidation of assets. User balance includes interest payable, which is simply the ratio of the current interest rate index divided by the interest rate index when the user balance was last updated.</p>
+<p>&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x4E2D;&#x6BCF;&#x4E2A;&#x8D26;&#x6237;&#x5730;&#x5740;&#x7684;&#x4F59;&#x989D;&#x4F5C;&#x4E3A; account checkpoint &#x5B58;&#x50A8;&#xFF0C;account checkpoint &#x662F;&#x4E00;&#x4E2A; Solidity &#x5143;&#x7EC4; &lt;uint256 borrows,uint256 interestIndex&gt;&#xFF0C;&#x8FD9;&#x4E2A;&#x5143;&#x7EC4;&#x63CF;&#x8FF0;&#x4E86;&#x8D26;&#x6237;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x66F4;&#x65B0;&#x501F;&#x6B3E;&#x65F6;&#x7684;&#x5229;&#x7387;&#x6307;&#x6570;&#x548C;&#x501F;&#x6B3E;&#x4F59;&#x989D;&#x3002;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x7684;&#x5F53;&#x524D;&#x5229;&#x7387;&#x6307;&#x6570;&#x4E5F;&#x4F1A;&#x5168;&#x5C40;&#x5B58;&#x50A8;&#x3002;</p>
+<p>The balance of each account address in the money market is stored as an account checkpoint. The account checkpoint is a Solidity tuple &lt;uint256 borrows, uint256 interestIndex&gt;, which describes the interest rate index and the borrowing balance when the account was last updated. The current interest rate index of the money market is also stored globally.</p>
+<p>&#x6BCF;&#x6B21;&#x4EA4;&#x6613;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x8BE5;&#x8D44;&#x4EA7;&#x7684;&#x4F9B;&#x7ED9;&#x5229;&#x7387;&#x548C;&#x501F;&#x6B3E;&#x5229;&#x7387;&#x6307;&#x6570;&#x90FD;&#x4F1A;&#x88AB;&#x66F4;&#x65B0;&#x4E3A;&#x81EA;&#x4E0A;&#x4E00;&#x671F;&#x6307;&#x6570;&#x4EE5;&#x6765;&#x7684;&#x590D;&#x5229;&#xFF0C;&#x4F7F;&#x7528;&#x671F;&#x5185;&#x7684;&#x5229;&#x606F;&#xFF0C;&#x4EE5; r&#x2217;t&#x8BA1;&#x4EF7;&#xFF0C;&#x6309;&#x6BCF;&#x671F;&#x5229;&#x7387;&#x8BA1;&#x7B97;&#x3002;</p>
+<p>Each time a transaction is produced, the asset&apos;s supply interest rate and borrowing interest rate index will be updated to the compound interest from the previous period of the index.The interest is priced at r&#x2217;t during the period of use,and calculated at the interest rate of each period.</p>
+<p>Index(a,n)= Index(a,n-1)* (1+r*t)</p>
+<ol>
+<li><strong>&#x5E02;&#x573A;&#x6C47;&#x7387; Market Exchange Rate</strong></li>
+</ol>
+<p>&#x8D44;&#x4EA7;&#x5728;&#x8D27;&#x5E01;&#x5E02;&#x573A;a &#x4E2D;&#x6D41;&#x901A;&#xFF0C;&#x968F;&#x7740;&#x5E02;&#x573A;&#x501F;&#x8D37;&#x4F9B;&#x7ED9;&#x5173;&#x7CFB;&#x548C;&#x65F6;&#x95F4;&#x7684;&#x63A8;&#x79FB;&#xFF0C;fToken&#x6570;&#x91CF;&#x4F1A;&#x4E0D;&#x65AD;&#x589E;&#x957F;&#xFF0C;&#x6211;&#x4EEC;&#x6839;&#x636E;&#x5E02;&#x573A;&#x4F9B;&#x6C42;&#x5173;&#x7CFB;&#x8BBE;&#x5B9A; fToken &#x7684;&#x5151;&#x6362;&#x6C47;&#x7387;&#xFF0C;&#x4E5F;&#x5C31;&#x662F; fToken&#x7684;&#x5E02;&#x573A;&#x6C47;&#x7387;&#x3002;</p>
+<p>Assets circulate in the money market a, but the amount of fToken will continue to grow with market interest. We set the exchange rate of fToken according to market supply and demand, which is the market exchange rate of fToken as well.</p>
+<p>Exchange Ratea= (Casha +Borrwsa*0.9)/Supplya</p>
+<p>Exchange Rateb= (Cashb+Borrwsb*0.8)/Supplyb</p>
+<p>&#x5F53;&#x5B58;&#x6B3E;&#x4E0D;&#x53D8;&#xFF0C;&#x501F;&#x6B3E;&#x8D8A;&#x591A;&#x65F6;&#xFF0C;&#x5E02;&#x573A;&#x6C47;&#x7387;&#x8D8A;&#x9AD8;&#x3002;&#x5B58;&#x6B3E;&#x4EBA;&#x7684; fToken&#x4F59;&#x989D;&#x53EF;&#x5151;&#x6362;&#x66F4;&#x591A;&#x8D44;&#x4EA7;&#xFF0C;&#x591A;&#x5151;&#x6362;&#x7684;&#x90E8;&#x5206;&#x5219;&#x4E3A;&#x5B58;&#x6B3E;&#x5229;&#x606F;&#x3002;</p>
+<p>l&#x8FD9;&#x91CC;&#x7684;&#x5E38;&#x91CF; 0.9&#x662F;&#x7A33;&#x5B9A;&#x5E01;&#x4F5C;&#x4E3A;&#x5B58;&#x6B3E;&#x5229;&#x7387;&#x548C;&#x501F;&#x6B3E;&#x5229;&#x7387;&#x7684;&#x5229;&#x5DEE;&#x8BBE;&#x7F6E;&#x7684;&#xFF0C;&#x5373;&#x501F;&#x6B3E;&#x5229;&#x606F;&#x7684;10%&#x4F5C;&#x4E3A;&#x5229;&#x5DEE;&#x5F52;Flux&#x5E73;&#x53F0;&#x6240;&#x6709;&#x3002;</p>
+<p>ii&#x8FD9;&#x91CC;&#x7684;&#x5E38;&#x91CF; 0.8&#x662F;&#x975E;&#x7A33;&#x5B9A;&#x5E01;&#x4F5C;&#x4E3A;&#x5B58;&#x6B3E;&#x5229;&#x7387;&#x548C;&#x501F;&#x6B3E;&#x5229;&#x7387;&#x7684;&#x5229;&#x5DEE;&#x8BBE;&#x7F6E;&#x7684;&#xFF0C;&#x5373;&#x501F;&#x6B3E;&#x5229;&#x606F;&#x7684;20%&#x4F5C;&#x4E3A;&#x5229;&#x5DEE;&#x5F52;Flux&#x5E73;&#x53F0;&#x6240;&#x6709;</p>
+<p>More borrowing brings a higher market exchange rate when the deposit remains unchanged. The depositor&apos;s fToken balance can be exchanged for more assets, and the assets that are exchanged by the fToken balance are the deposit interest.The constant 0.9 is to express the difference between the supply interest and the borrow interest rate of non-stablecoins and that 10% of the borrowing interest is distributed to orz Protocol&#x2019;s team. The constant 0.8 is to express the difference between the supply interest and the borrow interest rate of stablecoins and that 20% of the borrowing interest is distributed to orz Protocol&#x2019;s team.</p>
+<p>cTokensa= fTokensa/ Exchange Ratea</p>
+<ol>
+<li><strong>&#x5B58;&#x6B3E;&#xFF08;&#x94F8;&#x5E01;&#xFF09;Deposit(Mintage)</strong></li>
+</ol>
+<p>&#x4EFB;&#x4F55; Conflux &#x8D26;&#x6237;&#x90FD;&#x53EF;&#x901A;&#x8FC7;&#x4F9B;&#x7ED9;&#x8D44;&#x4EA7;&#x83B7;&#x5F97;&#x65B0;&#x94F8;&#x9020;&#x7684; fToken&#xFF1B;&#x4F9B;&#x7ED9;&#x8D44;&#x4EA7;&#x5B58;&#x5165;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x5408;&#x7EA6;&#x540D;&#x4E0B;&#xFF0C;&#x5176;&#x65B0;&#x94F8;&#x9020;&#x7684; fToken &#x6570;&#x91CF;&#x7B49;&#x4E8E;&#x4F9B;&#x7ED9;&#x8D44;&#x4EA7;&#x6570;&#x91CF;&#x9664;&#x4EE5;&#x5F53;&#x524D;&#x5E02;&#x573A;&#x6C47;&#x7387;&#x3002;</p>
+<p>Any Conflux account can obtain newly minted fTokens by offering assets, and the assets are deposited under the name of the money market contract, and the number of newly minted fTokens is equal to the number of the deposited assets divided by the current market exchange rate.</p>
+<p>Flux &#x534F;&#x8BAE;&#x4E2D;&#x6709;&#x4E09;&#x5927;&#x7C7B;&#x8D44;&#x4EA7;&#xFF0C;&#x5404;&#x7C7B;&#x8D44;&#x4EA7;&#x7684;&#x4F9B;&#x7ED9;&#x9014;&#x5F84;&#x6709;&#x6240;&#x5DEE;&#x5DF2;&#xFF1A;</p>
+<p>There are three types of assets in the Fluxprotocol, and there are different ways of offering different assets::</p>
+<ol>
+<li>Conflux &#x5E73;&#x53F0;&#x5E01; CFX &#x4F9B;&#x7ED9;&#xFF1A;&#x901A;&#x8FC7;
+<em>function</em>
+mint
+()
+payable
+&#x51FD;&#x6570;&#x4F9B;&#x7ED9;&#x3002;</li>
+</ol>
+<p>1.Conflux token CFX: offering assetes through_function_mint()payablefunction</p>
+<ol>
+<li><p>&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;cToken&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x9014;&#x5F84;&#x63D0;&#x4F9B;&#xFF1A;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;<br>cToken.<br>operatorSend(minter,market,amount,0x0,<br>0x1)<br>&#x8F6C;&#x8D26;<br>&#x81F3;<br>&#x8D27;&#x5E01;&#x5E02;&#x573A;<br>&#x5408;&#x7EA6;<br>&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7; ShuttleFlow<br>&#x4FA7;&#x94FE;&#x7CFB;&#x7EDF;&#x5C06;&#x4EE5;&#x592A;&#x574A;&#x6216;&#x8005;&#x6BD4;&#x7279;&#x5E01;&#x94FE;&#x4E0A;&#x8D44;&#x4EA7;&#x8F6C;&#x8D26;&#x81F3;<br>&#x8D27;&#x5E01;&#x5E02;&#x573A;<br>&#x3002;<br>ShuttleFlow&#x5C06;&#x901A;&#x8FC7;<br>cToken.mint(market,amount<br>,<br>minger<br>,<br>&quot;&quot;<br>)<br>&#x94F8;&#x9020;&#x65B0;&#x7684; cToken &#x5230;&#x501F;&#x8D37;&#x5408;&#x7EA6;&#x3002;</p>
+</li>
+<li><p>Cross-chain assets cToken, two ways:</p>
+</li>
+<li><p>Transffering assets to the money market contract through<br>cToken.operatorSend(minter,market,amount,0x0,0x1)<br>.</p>
+</li>
+<li><p>Transferring assets on the Ethereum or Bitcoin chain to the money market through the ShuttleFlow side chain system.
+ShuttleFlow will use
+cToken.mint(market,amount,
+minger
+,
+&quot;&quot;
+)
+to mint new cTokens into the loan contract.</p>
+</li>
+<li><p>&#x975E;&#x8DE8;&#x94FE;ERC777&#x8D44;&#x4EA7;&#xFF1A;&#x901A;&#x8FC7;<br>cToken.operatorSend(minter,market,amount,0x0,0x1)<br>&#x8F6C;&#x8D26;<br>&#x81F3;<br>&#x8D27;&#x5E01;&#x5E02;&#x573A;<br>&#x5408;&#x7EA6;&#x3002;</p>
+</li>
+<li><p>non-cross-chain ERC777 assets: transffering assets to the money market contract throughcToken.operatorSend(minter,market,amount,0x0,0x1)</p>
+</li>
+</ol>
+<p>&#x5B58;&#x6B3E;&#x51FD;&#x6570;&#x4E2D;&#x5904;&#x7406;&#x7684;&#x5173;&#x952E;&#x52A8;&#x4F5C;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x94F8;&#x9020;&#x65B0; fToken &#x7ED9;minter&#xFF1B;</li>
+<li><p>&#x66F4;&#x65B0;minter&#x4F59;&#x989D;&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6A21;&#x578B;&#x3002;</p>
+</li>
+</ol>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x4F9B;&#x7ED9; ERC777 &#x8D44;&#x4EA7;&#x5230;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x7684;&#x52A8;&#x4F5C;&#x5E76;&#x4E0D;&#x5728;&#x5B58;&#x6B3E;&#x51FD;&#x6570;&#x4E2D;&#x6267;&#x884C;&#xFF0C;&#x800C;&#x662F;&#x7531;ERC777&#x8F6C;&#x8D26;&#x5230;&#x8D27;&#x5E01;&#x65F6;&#x7684;tokensReceived&#x56DE;&#x8C03;&#x6765;&#x89E6;&#x53D1;&#x5B58;&#x6B3E;&#x51FD;&#x6570;&#x3002;</p>
+<p>The key steps to process deposit function are:</p>
+<ol>
+<li>Minting new fToke to minter;</li>
+<li><p>Updating minter balance;</p>
+</li>
+<li><p>Updating interest rate model.</p>
+</li>
+<li><p><strong>&#x53D6;&#x6B3E;&#xFF08;&#x8D4E;&#x56DE;&#xFF09;Withdraw&#xFF08;Rede</strong>
+<strong>em</strong>
+<strong>&#xFF09;</strong></p>
+</li>
+</ol>
+<p>&#x8D4E;&#x56DE;&#x76F8;&#x5F53;&#x4E8E;&#x53D6;&#x6B3E;&#xFF0C;&#x4E00;&#x65E6;&#x8D4E;&#x56DE;&#x8D44;&#x4EA7;&#x5C06;&#x4E0D;&#x518D;&#x4EAB;&#x6709;&#x5229;&#x606F;&#x7B49;&#x6743;&#x76CA;&#x3002;&#x8D4E;&#x56DE;&#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x5C06;&#x8D44;&#x4EA7;&#x4ECE;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x8F6C;&#x79FB;&#x81F3;&#x7528;&#x6237;&#xFF0C;&#x4EE5;&#x4EA4;&#x6362;&#x4E4B;&#x524D;&#x94F8;&#x9020;&#x7684; fToken&#x3002;&#x8D44;&#x4EA7;&#x8D4E;&#x56DE;&#x6570;&#x91CF;&#x7B49;&#x4E8E;&#x8981;&#x8D4E;&#x56DE;&#x7684;fToken &#x6570;&#x91CF;&#x4E58;&#x4EE5;&#x5F53;&#x524D;&#x6C47;&#x7387;&#x5F97;&#x51FA;&#x3002;&#x8D4E;&#x56DE;&#x6570;&#x91CF;&#x5FC5;&#x987B;&#x5C0F;&#x4E8E;&#x7528;&#x6237;&#x8D26;&#x53F7;&#x7684;&#x53EF;&#x7528;&#x6D41;&#x52A8;&#x6027;&#x4EE5;&#x53CA;&#x5E02;&#x573A;&#x7684;&#x53EF;&#x7528;&#x6D41;&#x52A8;&#x6027;&#x3002;</p>
+<p>Redeemis similar to withdrawal and once the redemption takes place, rights like interest income are no longer entitled to the withdrawer.The redemption function is responsible for transferring assets from the money market to users in exchange for the previously minted fToken. The amount of assets redeemed is equal to the amount of fToken to be redeemed multiplied by the current exchange rate. The redemption amount must be smaller than the available liquidity of the user account and the available liquidity of the market.</p>
+<p>Flux &#x534F;&#x8BAE;&#x4E2D;&#x6709;&#x4E09;&#x5927;&#x7C7B;&#x8D44;&#x4EA7;&#xFF0C;&#x5404;&#x7C7B;&#x8D44;&#x4EA7;&#x63D0;&#x4F9B;&#x4E0D;&#x540C;&#x7684;&#x63A5;&#x6536;&#x8D44;&#x4EA7;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ol>
+<li>Conflux &#x5E73;&#x53F0;&#x5E01; CFX&#xFF1A;&#x901A;&#x8FC7;
+<em>function</em>
+redeem
+(
+uint256
+ftokens)
+&#x51FD;&#x6570;&#x8D4E;&#x56DE;&#x8D44;&#x4EA7;&#x5230;&#x81EA;&#x5DF1;&#x7684; Conflux &#x5730;&#x5740;&#x3002;</li>
+<li><p>&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;cToken&#xFF1A;&#x652F;&#x6301;&#x8D4E;&#x56DE;&#x5230;&#x4EE5;&#x592A;&#x574A;&#x5730;&#x5740;&#x6216;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#x3002;</p>
+</li>
+<li><p>&#x901A;<br>&#x8FC7;<br><em>function</em><br>redeem<br>(<br>uint256<br>ftokens<br>)<br> &#x51FD;&#x6570;&#xFF0C;<br>&#x4EE5;&#x8D4E;&#x56DE;&#x8D44;&#x4EA7;<br>&#x5230;<br>&#x81EA;&#x5DF1;&#x7684; Conflux &#x5730;&#x5740;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;<br><em>function</em><br>redeem<br>(<br>uint256<br>ftokens,<br>address<br>receiver) &#x51FD;&#x6570;&#xFF0C;receiver &#x8F93;&#x5165;&#x4EE5;&#x592A;&#x574A;&#x6216;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#xFF0C;&#x4EE5;<br>&#x8D4E;&#x56DE;&#x8D44;&#x4EA7;<br>&#x5230;<br>&#x4EE5;&#x592A;&#x574A;&#x6216;&#x6BD4;&#x7279;&#x5E01;&#x94B1;&#x5305;&#x4E2D;&#x3002;</p>
+</li>
+<li><p>&#x975E;&#x8DE8;&#x94FE;ERC777&#x8D44;&#x4EA7;&#xFF1A;&#x901A;&#x8FC7;<br><em>function</em><br>redeem<br>(<br>uint256<br>ftokens<br>)<br> &#x51FD;&#x6570;&#xFF0C;&#x4EE5;<br>&#x8D4E;&#x56DE;&#x8D44;&#x4EA7;<br>&#x5230;<br>&#x81EA;&#x5DF1;&#x7684; Conflux &#x94B1;&#x5305;&#x3002;</p>
+</li>
+</ol>
+<p>There are three types of assets in the Flux protocol, and there are diferent ways to receive different assets:</p>
+<ol>
+<li>Conflux token CFX: Redeem assets to your Conflux address through
+<em>function</em>
+redeem
+(
+uint256
+ftokens)
+function.</li>
+<li><p>Cross-chain cToken: Support redemption to Ethereum address or Bitcoin address</p>
+</li>
+<li><p>Redeem assets to your Conflux adress through<br><em>function</em><br>redeem<br>(<br>uint256<br>ftokens<br>)<br>function</p>
+</li>
+<li><p>Receiver shall enter their own ETH/BTC adress through
+<em>function</em>
+redeem
+(
+uint256
+ftokens,
+address
+receiver)
+function to redeem thier asstes back to their ETH/BTC wallet.</p>
+</li>
+</ol>
+<p>3.Non-cross-chain ERC777 asstes: Redeem asstes back to your won Conflux wallet through_function_redeem(uint256ftokens)function.</p>
+<p>&#x53D6;&#x6B3E;&#x51FD;&#x6570;&#x4E2D;&#x5904;&#x7406;&#x7684;&#x5173;&#x952E;&#x52A8;&#x4F5C;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x5212;&#x8F6C; ERC777 &#x8D44;&#x4EA7;&#x7ED9; msg.sender &#x6216; receiver&#xFF08;&#x7531;&#x7ECF;&#x8DE8;&#x94FE;&#x7CFB;&#x7EDF;&#xFF09;&#xFF1B;</li>
+<li><p>&#x9500;&#x6BC1; fToken&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0; msg.sender &#x4F59;&#x989D;&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6A21;&#x578B;&#x3002;</p>
+</li>
+</ol>
+<p>The key steps to process withdrawal functions are:</p>
+<ol>
+<li>Transferring ERC777 assets to msg.sender or receiver (through cross-chain system);</li>
+<li><p>Dispose fToken;</p>
+</li>
+<li><p>Updating msg.sender balance;</p>
+</li>
+<li><p>Updating interest rate model.</p>
+</li>
+<li><p><strong>&#x501F;&#x6B3E; Borrowing</strong></p>
+</li>
+</ol>
+<p>&#x501F;&#x6B3E;&#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x5C06;&#x8D44;&#x4EA7;&#x4ECE;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x8F6C;&#x79FB;&#x7ED9;&#x7528;&#x6237;&#xFF0C;&#x5E76;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x501F;&#x6B3E;&#x4F59;&#x989D;&#xFF0C;&#x8BE5;&#x4F59;&#x989D;&#x6839;&#x636E;&#x8D44;&#x4EA7;&#x7684;&#x501F;&#x6B3E;&#x5229;&#x7387;&#x590D;&#x5229;&#x8BA1;&#x606F;&#x3002;&#x501F;&#x6B3E;&#x6570;&#x91CF;&#x5FC5;&#x987B;&#x5C11;&#x4E8E;&#x7528;&#x6237;&#x7684;&#x501F;&#x6B3E;&#x80FD;&#x529B;&#x4EE5;&#x53CA;&#x5E02;&#x573A;&#x7684;&#x53EF;&#x7528;&#x6D41;&#x52A8;&#x6027;&#x3002;&#x7528;&#x6237;&#x5FC5;&#x987B;&#x7EF4;&#x6301;&#x62B5;&#x62BC;&#x8981;&#x6C42;&#x4EE5;&#x907F;&#x514D;&#x6E05;&#x7B97;&#x3002;</p>
+<p>The borrowing function is responsible for transferring the assets from the money market to the users, and creating a borrowing balance that is compounded based on the asset&apos;s borrowing rate. The amount of borrowing must be smaller than the user&#x2019;s borrowing capacity and the market&#x2019;s available liquidity. The user must maintain the mortgage requirement in order to avoid liquidation.</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x501F;&#x6B3E;&#x4EBA;&#x5C06;&#x6536;&#x5230;&#x4E00;&#x7B14;&#x8D44;&#x4EA7;&#x4EA4;&#x6613;&#xFF0C;&#x5BF9;&#x4E8E; fETH &#x8D27;&#x5E01;&#x5E02;&#x573A;&#x6765;&#x8BF4;&#x5C06;&#x662F;&#x4EE5;&#x592A;&#x5E01;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x501F;&#x6B3E;&#x4EBA;&#x5FC5;&#x987B;&#x662F;&#x53EF;&#x507F;&#x8FD8;&#x7684;&#x3002;</p>
+<p>Please be noted that the borrower will receive an asset transaction, which will be Ether for the fETH money market. Therefore, the borrower must be repayable.</p>
+<p>Flux &#x534F;&#x8BAE;&#x4E2D;&#x6709;&#x4E09;&#x5927;&#x7C7B;&#x8D44;&#x4EA7;&#xFF0C;&#x5404;&#x7C7B;&#x8D44;&#x4EA7;&#x63D0;&#x4F9B;&#x4E0D;&#x540C;&#x7684;&#x63A5;&#x6536;&#x8D44;&#x4EA7;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ol>
+<li>Conflux &#x5E73;&#x53F0;&#x5E01; CFX&#xFF1A;&#x901A;&#x8FC7;
+<em>function</em>
+borrow
+(
+uint256
+ctokens)
+&#x51FD;&#x6570;&#x501F;&#x5165;&#x8D44;&#x4EA7;&#x5230;&#x81EA;&#x5DF1;&#x7684; Conflux &#x5730;&#x5740;&#x3002;</li>
+<li><p>&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;cToken&#xFF1A;&#x652F;&#x6301;&#x8D4E;&#x56DE;&#x5230;&#x4EE5;&#x592A;&#x574A;&#x5730;&#x5740;&#x6216;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;<br><em>function</em><br>borrow<br>(<br>uint256<br>ctokens)<br>&#x51FD;&#x6570;&#xFF0C;<br>&#x501F;&#x5165;&#x8D44;&#x4EA7;&#x5230;&#x81EA;&#x5DF1;&#x7684; Conflux &#x5730;&#x5740;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;<br><em>function</em><br>borrow<br>(<br>uint256<br>ctokens,<br>address<br>receiver)<br>&#x51FD;&#x6570;&#xFF0C;receiver &#x8F93;&#x5165;&#x4EE5;&#x592A;&#x574A;&#x6216;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#xFF0C;&#x4EE5;&#x501F;&#x5165;&#x8D44;&#x4EA7;&#x5230;&#x4EE5;&#x592A;&#x574A;&#x6216;&#x6BD4;&#x7279;&#x5E01;&#x94B1;&#x5305;&#x4E2D;&#x3002;</p>
+</li>
+<li><p>&#x975E;&#x8DE8;&#x94FE;ERC777&#x8D44;&#x4EA7;&#xFF1A;&#x901A;&#x8FC7;<br><em>function</em><br>borrow<br>(<br>uint256<br>ctokens)<br>&#x51FD;&#x6570;&#xFF0C;&#x501F;&#x5165;&#x8D44;&#x4EA7;&#x5230;&#x81EA;&#x5DF1;&#x7684; Conflux &#x5730;&#x5740;&#x3002;</p>
+</li>
+</ol>
+<p>There are three types of assets in the Fluxprotocol, and different assets has different ways get received::</p>
+<ol>
+<li>Conflux token CFX: borrow assets to your Conflux address through
+<em>function</em>
+borrow
+(
+uint256
+ctokens)
+function.</li>
+<li><p>Cross-chain cToken:<br>Support redemption to Ethereum address or Bitcoin address.</p>
+</li>
+<li><p>Borrow assets to your Conflux adress through<br><em>function</em><br>redeem<br>(<br>uint256<br>ftokens<br>)<br>function</p>
+</li>
+<li><p>To borrow assets to the Ethereum or Bitcoin wallet<br>,the receiver need enter the Ethereum or Bitcoin address through<br><em>function</em><br>borrow<br>(<br>uint256<br>ctokens,<br>address<br>receiver)<br>function,</p>
+</li>
+<li><p>Non-cross-chain ERC777 asstes: borrow<br>asstes to your won Conflux wal let through function borrow(uint256 ctokens)function.</p>
+</li>
+</ol>
+<p>&#x501F;&#x6B3E;&#x51FD;&#x6570;&#x4E2D;&#x5904;&#x7406;&#x7684;&#x5173;&#x952E;&#x52A8;&#x4F5C;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x5212;&#x8F6C; ERC777 &#x8D44;&#x4EA7;&#x7ED9; msg.sender &#x6216; receiver&#xFF08;&#x7531;&#x7ECF;&#x8DE8;&#x94FE;&#x7CFB;&#x7EDF;&#xFF09;&#xFF1B;</li>
+<li><p>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6307;&#x6570;<br>&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0; msg.sender &#x501F;&#x6B3E;&#x4F59;&#x989D;&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6A21;&#x578B;&#x3002;</p>
+</li>
+</ol>
+<p>The key steps to process borrwoing functions are:</p>
+<ol>
+<li>Transferring ERC777 assets to msg.sender or receiver (through cross-chain system);</li>
+<li><p>Updating interest rate index;</p>
+</li>
+<li><p>Updating msg.sender bowrrowing balance;</p>
+</li>
+<li><p>Updating interest rate model.</p>
+</li>
+<li><p><strong>&#x507F;&#x8FD8;&#x501F;&#x6B3E;</strong>
+<strong>Borrow</strong>
+<strong>R</strong>
+<strong>epayment</strong></p>
+</li>
+</ol>
+<p>&#x501F;&#x6B3E;&#x4EBA;&#x901A;&#x8FC7;&#x8FD8;&#x6B3E;&#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x5C06;&#x501F;&#x5165;&#x7684;&#x8D44;&#x4EA7;&#x8F6C;&#x79FB;&#x5230;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#xFF0C;&#x4EE5;&#x51CF;&#x5C11;&#x7528;&#x6237;&#x7684;&#x501F;&#x6B3E;&#x4F59;&#x989D;&#x3002;&#x5F53;&#x501F;&#x6B3E;&#x4EBA;&#x507F;&#x8FD8;&#x7684;&#x8D44;&#x4EA7;&#x591A;&#x4F59;&#x5B9E;&#x9645;&#x501F;&#x6B3E;&#x65F6;&#xFF0C;&#x5269;&#x4F59;&#x90E8;&#x5206;&#x5C06;&#x88AB;&#x4F5C;&#x4E3A;&#x5B58;&#x6B3E;&#x8BB0;&#x5165;&#x8D26;&#x6237;&#x540D;&#x4E0B;&#x3002;</p>
+<p>The borrower transfers the borrowed assets to the money market through the repayment function,and in this way, the user&apos;s loan balance can be reduced. When the borrower&apos;s repayment of assets exceeds the actual assetes that has been borrowed, the excesses will be credited to the account as a deposit.</p>
+<p>Flux &#x534F;&#x8BAE;&#x4E2D;&#x6709;&#x4E09;&#x5927;&#x7C7B;&#x8D44;&#x4EA7;&#xFF0C;&#x5404;&#x7C7B;&#x8D44;&#x4EA7;&#x7684;&#x8FD8;&#x6B3E;&#x9014;&#x5F84;&#x4E0E;&#x4F9B;&#x7ED9;&#x8D44;&#x4EA7;&#x7C7B;&#x4F3C;&#xFF1A;</p>
+<p>There are three types of assets in the Fluxprotocol, and the way to repay the asstes is similar to the way of offerring assetes::</p>
+<ol>
+<li>Conflux &#x5E73;&#x53F0;&#x5E01; CFX&#xFF1A;&#x901A;&#x8FC7;
+<em>function</em>
+repay
+()
+payable
+&#x51FD;&#x6570;&#x8FD8;&#x6B3E;&#x3002;</li>
+<li><p>Conflux token CFX: Repay the debt through<br><em>function</em><br>repay<br>()<br>payable<br>function.</p>
+</li>
+<li><p>&#x8DE8;&#x94FE;&#x8D44;&#x4EA7;cToken&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x9014;&#x5F84;&#x63D0;&#x4F9B;&#xFF1A;</p>
+</li>
+<li><p>Cross-chain cToken, two ways:</p>
+</li>
+<li><p>&#x901A;&#x8FC7;<br>cToken.operatorSend(<br>borrower,market,amount,0x0,0x0)<br>&#x8F6C;&#x8D26;<br>&#x81F3;<br>&#x8D27;&#x5E01;&#x5E02;&#x573A;<br>&#x5408;&#x7EA6;&#xFF0C;&#x9ED8;&#x8BA4;&#x89C6;&#x4E3A;&#x8FD8;&#x6B3E;&#x3002;</p>
+</li>
+<li><p>Repay assets to the money market contract, regarding it as repayment by default, through:<br>cToken.operatorSend(borrower,market,amount,0x0,0x0)</p>
+</li>
+</ol>
+<p>b)&#x901A;&#x8FC7; ShuttleFlow&#x4FA7;&#x94FE;&#x7CFB;&#x7EDF;&#x5C06;&#x4EE5;&#x592A;&#x574A;&#x6216;&#x8005;&#x6BD4;&#x7279;&#x5E01;&#x94FE;&#x4E0A;&#x8D44;&#x4EA7;&#x8F6C;&#x8D26;&#x81F3;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x3002;ShuttleFlow&#x5C06;&#x901A;&#x8FC7;cToken.mint(market,amount,borrower,&quot;&quot;)&#x94F8;&#x9020;&#x65B0;&#x7684; cToken &#x5230;&#x501F;&#x8D37;&#x5408;&#x7EA6;&#xFF0C;&#x9ED8;&#x8BA4;&#x89C6;&#x4E3A;&#x8FD8;&#x6B3E;&#x3002;</p>
+<p>b) Repayassets from the Ethereum or Bitcoin network to the money market through the ShuttleFlow. ShuttleFlow mints new cTokens into the borrowing smart contract, regarding it as repayment by default, through:cToken.mint(market,amount,borrower, &quot;&quot;)</p>
+<ol>
+<li>&#x975E;&#x8DE8;&#x94FE;ERC777&#x8D44;&#x4EA7;&#xFF1A;&#x901A;&#x8FC7;
+cToken.operatorSend(borrower,market,amount,0x0,0x0)
+&#x8F6C;&#x8D26;&#x81F3;
+&#x8D27;&#x5E01;&#x5E02;&#x573A;
+&#x5408;&#x7EA6;&#x3002;</li>
+<li>Non-cross-chain ERC777 assets: transferring assetes to money market contracts through
+cToken.operatorSend(borrower
+,market,amount,0x0,0x0)
+.</li>
+</ol>
+<p>&#x8FD8;&#x6B3E;&#x51FD;&#x6570;&#x4E2D;&#x5904;&#x7406;&#x7684;&#x5173;&#x952E;&#x52A8;&#x4F5C;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6307;&#x6570;&#xFF1B;</li>
+<li><p>&#x66F4;&#x65B0; borrower &#x6216;msg.sender<br>&#x501F;&#x6B3E;&#x4F59;&#x989D;&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0; borrower &#x6216;msg.sender &#x8D26;&#x6237;&#x4F59;&#x989D;&#xFF08;&#x53EF;&#x80FD;&#xFF09;&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6A21;&#x578B;&#x3002;</p>
+</li>
+</ol>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x507F;&#x8FD8; ERC777 &#x8D44;&#x4EA7;&#x5230;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x7684;&#x52A8;&#x4F5C;&#x5E76;&#x4E0D;&#x5728;&#x8FD8;&#x6B3E;&#x51FD;&#x6570;&#x4E2D;&#x6267;&#x884C;&#xFF0C;&#x800C;&#x662F;&#x7531;ERC777&#x8F6C;&#x8D26;&#x5230;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x5730;&#x5740;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x7684;tokensReceived&#x56DE;&#x8C03;&#x6765;&#x89E6;&#x53D1;&#x7684;&#x8FD8;&#x6B3E;&#x51FD;&#x6570;&#x3002;</p>
+<p>The key steps to process repayment functions are:</p>
+<ol>
+<li>Updating interest rate index;</li>
+<li><p>Updating borrower or msg.sender borrowing balance;</p>
+</li>
+<li><p>Updating<br>borrower or msg.sender balance(possibly);</p>
+</li>
+<li><p>Updating interest rate model.</p>
+</li>
+</ol>
+<p>Please be notedthe action of repaying ERC777 assets to the money market is not executed in therepayment function, but when ERC777 is transferred to the token, thetokensReceivedwill trigger the repayment function.</p>
+<ol>
+<li><strong>&#x6E05;&#x7B97;&#x501F;&#x6B3E;</strong>
+<strong>Borrowing Liquidation</strong></li>
+</ol>
+<p>&#x6E05;&#x7B97;&#x4EBA;&#x65E0;&#x963B;&#x529B;&#x8FDB;&#x884C;&#x6E05;&#x7B97;&#x3002;&#x8C03;&#x7528;Flux&#x5B88;&#x536B;&#x5408;&#x7EA6;Guard&#x5373;&#x53EF;&#x8FDB;&#x884C;&#x6E05;&#x7B97;&#x3002;&#x4F46;&#x5728;&#x6E05;&#x7B97;&#x524D;&#x9700;&#x6388;&#x6743; Guard &#x5C06;&#x5F85;&#x507F;&#x8FD8;&#x7684;&#x501F;&#x6B3E;&#x4ECE;&#x6E05;&#x7B97;&#x4EBA;&#x8D26;&#x6237;&#x4E2D;&#x8F6C;&#x8D26;&#x81F3;&#x501F;&#x8D37;&#x6D41;&#x52A8;&#x6027;&#x6C60;&#x4E2D;&#x3002;</p>
+<p>The liquidator repays all or part of the borrowing for the borrower, so that the liquidity of the borrower&apos;s account is restored. When multiple liquidators participate in the liquidation, they will be liquidated in order according to time priority.</p>
+<p>&#x6E05;&#x7B97;&#x51FD;&#x6570;&#xFF1A;</p>
+<p>functionliquidate(address borrower)external</p>
+<p>&#x6E05;&#x7B97;&#x51FD;&#x6570;&#x4E2D;&#x5904;&#x7406;&#x7684;&#x5173;&#x952E;&#x52A8;&#x4F5C;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x68C0;
+&#x67E5;
+&#x501F;
+&#x6B3E;
+&#x4EBA;
+&#x8D26;
+&#x6237;
+&#x62B5;&#x62BC;
+&#x662F;&#x5426;
+&#x4F4E;
+&#x4E8E;
+&#x6E05;&#x7B97;
+&#x62B5;
+&#x62BC;&#x7387;&#x3002;</li>
+<li><p>&#x507F;<br>&#x8FD8;<br>&#x501F;<br>&#x6B3E;<br>&#x5230;<br>&#x501F;<br>&#x8D37;<br>&#x6D41;&#x52A8;<br>&#x6C60;<br>&#x4E2D;<br>&#xFF1B;</p>
+</li>
+<li><p>&#x66F4;&#x65B0;<br>borrower&#x501F;&#x6B3E;&#x4F59;&#x989D;&#xFF1B;</p>
+</li>
+<li><p>sender &#x83B7;&#x5F97;borrower &#x7684;&#x62B5;&#x62BC;&#x8D44;&#x4EA7;
+f
+t
+o
+k
+e
+n
+&#xFF1B;</p>
+</li>
+<li>&#x66F4;&#x65B0;&#x5229;&#x7387;&#x6A21;&#x578B;&#x3002;</li>
+</ol>
+<p>Liquidation function:</p>
+<p>functionliquidate(address borrower)external</p>
+<p>The key steps to process liquidation functions are:</p>
+<ol>
+<li>Check whether the borrower&#x2019;s collateral rate is lower than the liquidation collateral rate</li>
+</ol>
+<p>2.Repay outstanding borrowings into the money market12</p>
+<p>3.Update borrower&apos;s borrowing outstanding</p>
+<ol>
+<li>sender will receive the borrower&#x2019;s collateral ftoken assets</li>
+<li>Update interest rate mod</li>
+</ol>
+<h1 id="gornl"><strong>Token economics&#x4EE3;&#x5E01;&#x7ECF;&#x6D4E;&#x6A21;&#x578B;</strong> </h1>
+<p>Flux &#x534F;&#x8BAE;&#x7684;&#x5E73;&#x53F0;&#x4EE3;&#x5E01; $FLUX &#x662F;&#x57FA;&#x4E8E;&#x793E;&#x533A;&#x7BA1;&#x7406;&#x7684;DAO&#x4EE3;&#x5E01;&#x3002;&#x4E3A;&#x7EAA;&#x5FF5;&#x4E2D;&#x672C;&#x806A;&#xFF0C;&#x6700;&#x5927;&#x4EE3;&#x5E01;&#x4F9B;&#x7ED9;&#x88AB;&#x8BBE;&#x5B9A;&#x4E3A;&#x4E8C;&#x5343;&#x4E00;&#x767E;&#x4E07;&#x4E2A;$FLUX&#x3002;&#x6240;&#x6709;&#x7684;&#x4EE3;&#x5E01;&#x5C06;&#x5728;&#x672A;&#x6765;&#x56DB;&#x5E74;&#x5185;&#xFF0C;&#x901A;&#x8FC7;&#x5BF9;&#x63A5;&#x5E73;&#x53F0;&#x548C;Flux&#x56E2;&#x961F;&#x53D1;&#x653E;&#x7ED9;&#x793E;&#x533A;&#x53C2;&#x4E0E;&#x8005;&#x3002;&#x5176;&#x4E2D;&#xFF0C;75%&#x7684;$FLUX&#x5C06;&#x53D1;&#x653E;&#x7ED9;&#x793E;&#x533A;&#x53C2;&#x4E0E;&#x8005;&#xFF0C;10%&#x7684;$FLUX&#x5C06;&#x53D1;&#x653E;&#x7ED9;Flux &#x534F;&#x8BAE;&#x56E2;&#x961F;&#xFF0C;15%&#x7684;$FLUX&#x5C06;&#x53D1;&#x653E;&#x7ED9;Flux&#x793E;&#x533A;&#x57FA;&#x91D1; &#xFF08;1%&#x5C06;&#x4FDD;&#x7559;&#x7ED9;&#x65E9;&#x671F;&#x793E;&#x533A;&#x5FD7;&#x613F;&#x8005;&#xFF0C;14%&#x5C06;&#x7528;&#x4E8E;&#x793E;&#x533A;&#x53D1;&#x5C55;&#x4EE5;&#x53CA;Flux&#x6D41;&#x52A8;&#x6027;&#x50A8;&#x5907;&#xFF09;</p>
+<p>$FLUX&#x7684;&#x53D1;&#x884C;&#x65F6;&#x95F4;&#x8F74;&#x5C06;&#x5448;&#x7EBF;&#x72B6;&#xFF0C;&#x5373;&#x6BCF;&#x65E5;&#x51CF;&#x5C11;16&#x4E2A;$FLUX&#xFF0C;&#x800C;26,055.56164&#x4E2A;$FLUX&#x5C06;&#x5728;&#x4E0A;&#x7EBF;&#x540E;&#x7B2C;&#x4E00;&#x5929;&#x9646;&#x7EED;&#x53D1;&#x884C;&#x3002;&#x4E0B;&#x8868;&#x5C06;&#x5C55;&#x73B0;$FLUX&#x672A;&#x6765;&#x56DB;&#x5E74;&#x7684;&#x6BCF;&#x65E5;&#x53D1;&#x653E;&#x8BA1;&#x5212;&#xFF1A;</p>
+<p>Flux Protocol&#x2019;s platform token $FLUX is a DAO token for the community governance of the platform. In honor of Satoshi Nakamoto, the maximum supply is capped at 21 million $FLUX. All tokens will be release to the community through platform engagement and the Flux team over a period of 4 years. 75% of all $ FLUX will be release to the community, 10% to the Flux Protocol Team, and 15% to the Flux Community Fund (1% are reserved early community volunteers, and 14% for the community development and the Flux Liquidation Reserve)</p>
+<p>The release schedule of $FLUX is linear with a daily decrease of 16 $FLUX. 26,055.56164 $Flux tokens will be gradually released on day 1. The following figure displays the daily release of $FLUX over 4 years:</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615821596356-c0140a2e-d225-4d5e-9541-81a1b4362bc9.png" alt=""></p>
+<p>The following figure displays the $FLUX supply over 4 years:</p>
+<p>&#x4E0B;&#x8868;&#x5C55;&#x793A;&#x4E86;$FLUX&#x672A;&#x6765;&#x56DB;&#x5E74;&#x7684;&#x4F9B;&#x7ED9;</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2965414/1615821609596-b7f3bc6a-059d-4cae-959f-2c629edf1e58.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../ying-wen.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: En">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"一. White Paper","level":"1.3.1","depth":2,"previous":{"title":"En","level":"1.3","depth":1,"path":"ying-wen.md","ref":"ying-wen.md","articles":[{"title":"一. White Paper","level":"1.3.1","depth":2,"path":"ying-wen/4e00-white-paper.md","ref":"ying-wen/4e00-white-paper.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ying-wen/4e00-white-paper.md","mtime":"2021-08-19T09:00:41.084Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-19T09:04:17.163Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
